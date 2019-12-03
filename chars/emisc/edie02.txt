@@ -1,0 +1,29 @@
+name	   edie02
+type	   none
+shadow	   0
+
+anim idle
+	loop      0
+	delay     4
+	offset    74 113
+	sound     data/sounds/die1.wav
+	frame     data/chars/emisc/slexp01.gif
+	frame     data/chars/emisc/slexp02.gif
+	frame     data/chars/emisc/slexp03.gif
+	frame     data/chars/emisc/slexp04.gif
+	frame     data/chars/emisc/slexp05.gif
+	frame     data/chars/emisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+

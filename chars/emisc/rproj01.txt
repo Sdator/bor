@@ -1,0 +1,26 @@
+name    rproj01
+health  1
+type	none
+speed	1
+remove  1
+score   0 -1
+noquake 1
+antigravity 100
+subject_to_wall 1
+subject_to_hole 0
+offscreenkill   10
+candamage  player obstacle npc 
+
+anim idle
+	loop   0
+	delay  2
+	offset 9 20
+	bbox   0
+	hitfx  data/sounds/beat9.wav
+	attack 5 7 9 5 8 0 1 0 0
+	forcedirection -1
+	frame  data/chars/emisc/rproj01.gif
+
+
+
+

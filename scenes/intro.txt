@@ -1,0 +1,62 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+animation	data/scenes/loadingsfx/001.gif 0 -1
+animation	data/scenes/loadingsfx/002.gif 0 -1
+animation	data/scenes/loadingsfx/003.gif 0 -1
+animation	data/scenes/loadingsfx/004.gif 0 -1
+animation	data/scenes/loadingsfx/005.gif 0 -1
+video    	data/scenes/title.webm 0 0
+
+

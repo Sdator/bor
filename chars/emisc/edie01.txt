@@ -1,0 +1,42 @@
+name	   edie01
+type	   none
+shadow	   0
+
+anim idle
+	loop      0
+	delay     3
+	offset    62 92
+	sound      data/sounds/die1.wav
+	frame     data/chars/emisc/exp01.gif
+	frame     data/chars/emisc/exp02.gif
+	frame     data/chars/emisc/exp03.gif
+	frame     data/chars/emisc/exp04.gif
+	frame     data/chars/emisc/exp05.gif
+	frame     data/chars/emisc/exp06.gif
+	frame     data/chars/emisc/exp07.gif
+	frame     data/chars/emisc/exp08.gif
+	frame     data/chars/emisc/exp09.gif
+	frame     data/chars/emisc/exp10.gif
+	frame     data/chars/emisc/exp11.gif
+	frame     data/chars/emisc/exp12.gif
+	frame     data/chars/emisc/exp13.gif
+	frame     data/chars/emisc/exp14.gif
+	frame     data/chars/emisc/exp15.gif
+	frame     data/chars/emisc/exp16.gif
+	frame     data/chars/emisc/exp17.gif
+	frame     data/chars/emisc/exp18.gif
+	frame     data/chars/emisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+

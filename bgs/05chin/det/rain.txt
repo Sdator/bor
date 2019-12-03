@@ -1,0 +1,15 @@
+name	rain
+type	panel
+speed   10
+#subject_to_screen 1
+
+anim idle
+	 loop      1
+	 delay     5
+	 offset    0 228
+	 frame     data/bgs/05chin/det/rain01a.gif
+	 frame     data/bgs/05chin/det/rain02a.gif
+	 frame     data/bgs/05chin/det/rain03a.gif
+	 frame     data/bgs/05chin/det/rain04a.gif
+
+

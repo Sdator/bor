@@ -1,0 +1,113 @@
+music           data/music/twym.ogg 1
+background	data/bgs/dojo/credix.gif
+panel		data/bgs/dojo/credix.gif
+cameratype	1
+direction       both
+light  		10  20
+at       	0
+settime         0
+notime          1
+noslow          1
+order	        a
+type            1
+spawn1          73 30
+spawn2          48 56
+updatescript     data/scripts/traileru.c
+nopause         1
+
+wall    0 228 -100 -100 0 0 200 500
+wall    256 228 0 0 100 100 200 500
+
+
+spawn  cinema3
+flip   1
+coords 0 228
+at     0
+
+spawn  cinema2
+flip   1
+coords 0 228
+at     0
+
+#######
+group   13 13
+at      0
+
+spawn   aichange
+coords  128 200
+at      0
+
+spawn  cinema4
+flip   1
+coords 0 228
+at     0
+
+spawn   roper
+health  500
+map     1
+coords  240 170
+at      0
+
+spawn   cwilliams
+health  500
+map     1
+coords  10 220
+at      0
+
+spawn   baker
+health  400
+map     3
+coords  10 170
+at      0
+
+spawn   linda1
+health  500
+coords  240 220
+at      0
+
+spawn   steve
+health  500
+coords  128 170
+at      0
+
+spawn   cjackson
+health  500
+coords  128 220
+at      0
+
+spawn   chen1b
+health  500
+coords  64 130
+at      0
+
+spawn   cguire
+health  500
+coords  64 190
+at      0
+
+spawn   chen1b
+map     1
+health  200
+coords  192 130
+at      0
+
+spawn   ccarlem
+health  500
+coords  192 190
+at      0
+
+spawn   cjeff
+health  500
+coords  128 200
+at      0
+
+spawn   cduke
+health  500
+coords  128 220
+at      0
+
+spawn   cbobo
+health  500
+coords  128 150
+at      0
+

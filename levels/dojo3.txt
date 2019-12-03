@@ -1,0 +1,30 @@
+#music           data/music/ki.BOR
+background	data/bgs/111/b01.gif
+panel		data/bgs/111/n01.gif
+cameratype	1
+direction       both
+light  		10  20
+at       	0
+settime         0
+notime          1
+noslow          1
+order	        a
+type            1
+spawn1          73 30
+spawn2          48 56
+updatescript     data/scripts/traileru.c
+
+
+
+#######
+
+group   1 1
+at      1436
+
+
+
+spawn   stagetr
+flip    1
+coords  0 232
+at      1436
+

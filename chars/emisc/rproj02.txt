@@ -1,0 +1,22 @@
+name    rproj02
+health  1
+type	enemy
+speed	1
+remove  1
+score   0 -1
+noquake 1
+antigravity 100
+subject_to_wall 0
+offscreenkill   10
+candamage  player obstacle npc 
+
+anim idle
+	loop   0
+	delay  2
+	offset 10 20
+	bbox   0
+	hitfx  data/sounds/beat9.wav
+	attack 7 7 5 6 10 1 1 0 0
+	frame  data/chars/emisc/rproj02.gif
+
+

@@ -1,0 +1,21 @@
+name	toitles
+health	1
+type	none
+speed   0
+nomove  1
+shadow	0
+lifespan 3
+
+anim idle
+	 loop    0
+	 delay   140
+	 offset  49 100
+	 bbox    0
+	 flipframe 0
+	 sound   data/sounds/toitles.wav
+	 frame   data/chars/emisc/toitles.gif
+	 frame   data/chars/emisc/empty.gif
+
+
+
+

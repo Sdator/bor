@@ -1,0 +1,65 @@
+name	   01ball
+nolife     1
+type	   none
+gfxshadow  1
+candamage  player enemy
+lifespan   2
+offscreenkill 100
+
+anim idle
+	loop      1
+	delay     2
+	offset    25 40
+	bbox      0
+	move      1
+	jumpframe 31 2 0.5 1
+	landframe 31
+	hitfx     data/sounds2/beat7.wav
+	attack    9 9 31 31 15 1 1 0 8 5
+	jugglecost 5
+	forcedirection -1
+	dropv      1.3 0.8 0
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	frame     data/chars/0misc/01ball.gif
+	move      0
+	delay     1
+	frame     data/chars/0misc/01ball.gif
+	delay     1
+	sound     data/sounds/beatkill.wav
+	frame     data/chars/0misc/01ball.gif
+	delay     50
+	frame     data/chars/0misc/01ball.gif
+	delay     2
+	frame     data/chars/0misc/01ball.gif
+@cmd   updateframe getlocalvar("self") 30
+	frame     data/chars/0misc/01ball.gif
+
+

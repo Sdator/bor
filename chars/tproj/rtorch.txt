@@ -1,0 +1,38 @@
+name	  rtorch
+health    0
+speed     0
+nomove    1
+remove    0
+type      enemy
+hostile   enemy obstacle
+candamage enemy obstacle
+nolife    1
+alpha     1
+lifespan  3
+
+load      rfire
+
+anim idle
+	loop	1
+	delay	2
+	offset	48 57
+	seta    0
+	hitflash  flashh
+	custknife rfire
+	throwframe 3 -5
+	attack  29 45 52 31 15 1 1 0 0
+	frame	data/chars/tproj/rtorch01.gif
+	frame	data/chars/tproj/rtorch02.gif
+	frame	data/chars/tproj/rtorch03.gif
+	frame	data/chars/tproj/rtorch04.gif
+	frame	data/chars/tproj/rtorch05.gif
+	frame	data/chars/tproj/rtorch06.gif
+	frame	data/chars/tproj/rtorch07.gif
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+name    comkil
+facing  1
+type	panel
+speed     10
+lifespan 1.5
+subject_to_hole 0
+subject_to_obstacle 0
+subject_to_platform 1
+subject_to_gravity 0
+no_adjust_base 0
+setlayer 9999999999
+
+anim idle
+	 loop    0
+	 delay   2
+	 offset  123 82
+	 bbox    0 0 0 0	
+	 sound   data/sounds/killer.wav
+drawmethod 32 32 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 64 64 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 96 96 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 128 128 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 160 160 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 192 192 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 224 224 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 240 240 0 0 0 0 0 0 0 0
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod 256 256 0 0 0 0 0 0 0 0
+	 delay   65
+	 frame   data/chars/0misc/comkil01.gif
+	 delay   5
+drawmethod alpha 6
+drawmethod channel 0.90
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod channel 0.75
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod channel 0.60
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod channel 0.45
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod channel 0.30
+	 frame   data/chars/0misc/comkil01.gif
+drawmethod channel 0.15
+	 frame   data/chars/0misc/comkil01.gif
+	 frame   data/chars/0misc/empty.gif

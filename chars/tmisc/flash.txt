@@ -1,0 +1,42 @@
+name	Flash
+type	none
+shadow	0
+toflip  1
+alpha	1
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    48 50
+	 frame     data/chars/Tmisc/flash01.gif
+	 frame     data/chars/Tmisc/flash02.gif
+	 frame     data/chars/Tmisc/flash03.gif
+	 frame     data/chars/Tmisc/flash04.gif
+	 frame     data/chars/Tmisc/flash05.gif
+	 frame     data/chars/Tmisc/flash06.gif
+	 frame     data/chars/Tmisc/flash07.gif
+
+anim attack
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+
+
+anim attack2
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+
+anim attack3
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+
+anim attack4
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif

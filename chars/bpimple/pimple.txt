@@ -1,0 +1,664 @@
+name		Pimple
+type		player
+health		100
+mp              100
+jugglepoints    20
+candamage       enemy obstacle pshot npc
+subject_to_obstacle 0
+speed           8
+running         15 2 2 0 0
+jumpheight      3
+jumpmove        3 3
+gfxshadow       1
+atchain         1 2 3 4
+noquake         1
+makeinv         2
+falldie         2
+riseinv         1
+jumpspeed       8
+grabdistance    35
+antigravity     40
+icon		data/chars/bpimple/icon.gif 1
+diesound        data/sounds2/death.wav
+#parrow         
+#parrow2   
+#parrow3
+#parrow4
+
+animationscript data/scripts/lib001.c
+didhitscript    data/scripts/didhit.c
+ondrawscript	data/scripts/shadowon.c
+
+load    btstomp
+
+palette   data/chars/Bpimple/idle.gif
+
+com     a3	freespecial1
+com     a2	freespecial2
+
+anim waiting
+	loop       0
+	delay      4
+	offset     46 189
+	bbox       0
+	fshadow    0
+        frame      data/chars/Bpimple/sel01.gif
+
+anim select
+	loop       0
+	delay      4
+	offset     46 189
+	bbox       0
+	fshadow    0
+        frame      data/chars/Bpimple/sel02.gif
+        frame      data/chars/Bpimple/sel01.gif
+        frame      data/chars/Bpimple/sel02.gif
+        frame      data/chars/Bpimple/sel01.gif
+        frame      data/chars/Bpimple/sel02.gif
+        frame      data/chars/Bpimple/sel01.gif
+        frame      data/chars/Bpimple/sel02.gif
+        frame      data/chars/Bpimple/sel01.gif
+        frame      data/chars/Bpimple/sel02.gif
+        frame      data/chars/Bpimple/sel01.gif
+	delay      3
+	sound      data/sounds2/get.wav
+	drawmethod 16 16 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 32 32 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 48 48  0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 64 64 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 80 80 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 96 96 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 112 112 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 128 128 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 144 144 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 160 160 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 176 176 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 192 192 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 208 208 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 224 224 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	drawmethod 240 240 0 0 0 0 -1 0 0 0
+        frame      data/chars/Bpimple/sel03.gif
+	nodrawmethod
+        frame      data/chars/Bpimple/sel03.gif
+	delay      5
+        frame      data/chars/Bpimple/sel04.gif
+        frame      data/chars/Bpimple/sel05.gif
+        frame      data/chars/Bpimple/sel04.gif
+        frame      data/chars/Bpimple/sel05.gif
+        frame      data/chars/Bpimple/sel04.gif
+        frame      data/chars/Bpimple/sel05.gif
+
+anim follow150 #credix scene
+	 loop       1
+	 delay      10
+	 offset     1 1
+	 bbox       0
+	 fshadow    0
+         frame      data/chars/0misc/empty.gif
+anim idle
+@cmd clearL
+	loop	1
+	delay	70
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/Bpimple/idle.gif
+	frame	data/chars/Bpimple/idle2.gif
+	frame	data/chars/Bpimple/idle.gif
+	delay	9
+	frame	data/chars/Bpimple/idle3.gif
+	frame	data/chars/Bpimple/idle4.gif
+	frame	data/chars/Bpimple/idle5.gif
+	frame	data/chars/Bpimple/idle4.gif
+	frame	data/chars/Bpimple/idle5.gif
+	frame	data/chars/Bpimple/idle4.gif
+	frame	data/chars/Bpimple/idle3.gif
+	delay	15
+	frame	data/chars/Bpimple/idle6.gif
+	frame	data/chars/Bpimple/idle7.gif
+	frame	data/chars/Bpimple/idle8.gif
+	frame	data/chars/Bpimple/idle7.gif
+	frame	data/chars/Bpimple/idle8.gif
+
+anim walk
+	loop	1
+	delay	9
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/Bpimple/w1.gif
+	frame	data/chars/Bpimple/w2.gif
+	frame	data/chars/Bpimple/w3.gif
+	frame	data/chars/Bpimple/w4.gif
+	frame	data/chars/Bpimple/w5.gif
+	frame	data/chars/Bpimple/w6.gif
+	frame	data/chars/Bpimple/w7.gif
+
+anim run
+@script
+void self = getlocalvar("self"); //get the self var
+void power = getentityproperty(self,"mp"); // get target's current mp
+changeentityproperty(self, "mp", power+1); 
+@end_script
+	loop	1
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/Bpimple/r1.gif
+	delay	5
+	frame	data/chars/Bpimple/r2.gif
+	frame	data/chars/Bpimple/r3.gif
+	frame	data/chars/Bpimple/r4.gif
+	frame	data/chars/Bpimple/r5.gif
+	frame	data/chars/Bpimple/r6.gif
+	frame	data/chars/Bpimple/r7.gif
+	delay	3
+	frame	data/chars/Bpimple/r8.gif
+
+anim attack1
+	loop	0
+	delay	9
+	offset	88 195
+	bbox	82 145 20 50
+@cmd ani0020 openborconstant("ANI_ATTACK2") openborconstant("ANI_PAIN3")
+@cmd ani0020 openborconstant("ANI_ATTACK3") openborconstant("ANI_PAIN7")
+	frame	data/chars/Bpimple/a1.gif
+	move    1
+	delay   6
+        hitfx   data/sounds2/beat8.wav
+	frame	data/chars/Bpimple/a2.gif
+	attack3 97 154 29 14 8 0 0 0 8 5
+	dropv      1.5 1 0
+	forcedirection -1
+	frame	data/chars/Bpimple/a3.gif
+	attack3 0
+	delay   12
+	frame	data/chars/Bpimple/a4.gif
+
+anim attack2
+	loop	0
+	delay	14
+	offset	88 195
+	bbox	82 145 20 50
+	jumpframe 1 1 0 0
+@cmd ani0020 openborconstant("ANI_ATTACK3") openborconstant("ANI_PAIN7")
+	frame	data/chars/Bpimple/a5.gif
+	delay   10
+        hitfx   data/sounds2/beata.wav
+	attack7 98 138 34 21 10 0 0 0 8 5
+	dropv      1.5 1 0
+	forcedirection -1
+	frame	data/chars/Bpimple/a6.gif
+	delay   18
+	attack7 0 0 0 0
+	frame	data/chars/Bpimple/a7.gif
+
+anim attack3
+	loop	0
+	delay	16
+	offset	88 195
+	bbox	82 145 20 50
+        hitfx   data/sounds2/steel.wav
+	frame	data/chars/Bpimple/a8.gif
+	move    4
+	delay   6
+	frame	data/chars/Bpimple/a9.gif
+	attack  98 138 55 43 15 1 1 0 0 8 3
+	jugglecost 7
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Bpimple/a91.gif
+	attack  98 138 55 43 15 1 1 0 0 8 3
+	jugglecost 7
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Bpimple/a92.gif
+	delay   23
+	move    0
+	attack  0
+	frame	data/chars/Bpimple/a93.gif
+
+anim runattack
+	loop	0
+	delay   5
+	offset	88 195
+	bbox	82 145 10 50
+	jumpframe 1 1.7 1.7 0
+	landframe 2
+	sound   data/sounds2/punch.wav
+        hitfx   data/sounds2/beata.wav
+	frame	data/chars/Bpimple/ga5.gif
+        delay   200
+	attack  111 141 29 38 8 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 1 0
+	forcedirection -1
+	frame	data/chars/Bpimple/ga6.gif
+	attack  0
+	delay   12
+	frame	data/chars/Bpimple/rise1.gif
+
+anim runjumpattack
+	loop	0
+	delay	10
+	offset	88 195
+	bbox	82 125 20 50
+	sound   data/sounds2/punch2.wav
+	frame	data/chars/Bpimple/j3.gif
+	delay   6
+        hitfx   data/sounds2/beat8.wav
+	attack  85 155 40 35 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Bpimple/j4.gif
+	frame	data/chars/Bpimple/j5.gif
+	frame	data/chars/Bpimple/j6.gif
+	attack  0
+	frame	data/chars/Bpimple/j6.gif
+
+anim special
+	loop	0
+	delay	6
+	offset	88 195
+	bbox	0
+	energycost 10
+	mponly     2
+        jumpframe 2 1.5 0 0
+	landframe 4
+        hitfx   data/sounds2/beat7.wav
+	frame	data/chars/Bpimple/sp0.gif
+	sound   data/sounds2/punch.wav
+	frame	data/chars/Bpimple/sp1.gif
+	sound   data/chars/Bpimple/sp.wav
+	delay	200
+        attack  47 115 83 45 17 1 1 0 8 5
+	jugglecost 7
+	dropv   1.5 2.5 0
+	frame	data/chars/Bpimple/sp2.gif
+	attack  0
+	delay	6
+	frame	data/chars/Bpimple/sp1.gif
+	frame	data/chars/Bpimple/sp0.gif
+	frame	data/chars/Bpimple/rise1.gif
+	frame	data/chars/Bpimple/rise2.gif
+
+anim freespecial1
+#SUPER
+	loop	0
+	delay	9
+	offset	88 195
+	bbox	0
+	energycost 100
+	mponly     1
+	custentity btstomp
+	spawnframe 27 25 10 0 0
+	quakeframe 27 12 -5
+	sound   data/sounds2/super.wav
+	frame	data/chars/Bpimple/a1.gif
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   25
+	sound   data/sounds2/beat1.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   9
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   25
+	sound   data/sounds2/beat1.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   8
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   18
+	sound   data/sounds2/beat1.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   8
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   18
+	sound   data/sounds2/beata.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   8
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   18
+	sound   data/sounds2/beata.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   7
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   12
+	sound   data/sounds2/beat7.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   7
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   12
+	sound   data/sounds2/beat7.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   7
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba2.gif
+	delay   12
+	sound   data/sounds2/beat7.wav
+	frame	data/chars/Bpimple/ba3.gif
+	delay   5
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba4.gif
+	delay   8
+	sound   data/sounds2/steel.wav
+	hitfx   data/sounds2/beat7.wav
+	attack  -600 0 1100 1000 70 1 1 0 13 90
+	dropv   2 3 0
+	frame	data/chars/Bpimple/ba5.gif
+	delay   5
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba4.gif
+	delay   8
+	sound   data/sounds2/steel.wav
+	frame	data/chars/Bpimple/ba5.gif
+	delay   5
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba4.gif
+	delay   8
+	sound   data/sounds2/steel.wav
+	frame	data/chars/Bpimple/ba5.gif
+	delay   5
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba4.gif
+	delay   8
+	sound   data/sounds2/steel.wav
+	frame	data/chars/Bpimple/ba5.gif
+	delay   5
+	frame	data/chars/Bpimple/ba1.gif
+	frame	data/chars/Bpimple/ba4.gif
+	delay   18
+	sound   data/sounds2/steel.wav
+	attack  0
+	frame	data/chars/Bpimple/ba5.gif
+
+anim freespecial2
+#SUPER HEADBUTT
+	loop	0
+	delay   3
+	offset	88 195
+	bbox	82 145 10 50
+	jumpframe 1 1.5 1.5 0
+	landframe 5
+	energycost 40
+	mponly     1
+	sound   data/sounds2/punch.wav
+        hitfx   data/sounds2/beat2.wav
+	frame	data/chars/Bpimple/ga5.gif
+	frame	data/chars/Bpimple/ga6.gif
+        delay   6
+	attack  100 125 38 55 18 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame	data/chars/Bpimple/ra1.gif
+	attack  99 119 42 80 18 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame	data/chars/Bpimple/ra2.gif
+	delay   100
+	attack  93 116 49 79 18 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame	data/chars/Bpimple/ra3.gif
+	attack  0
+	delay   12
+	frame	data/chars/Bpimple/rise1.gif
+
+anim special3
+#HARD KO
+	loop	0
+	delay	10
+	offset	88 195
+	bbox	82 115 20 30
+	energycost 40
+	mponly     1
+	sound   data/sounds2/punch.wav
+        hitfx   data/sounds2/steel.wav
+	frame	data/chars/Bpimple/j3.gif
+	delay   6
+	frame	data/chars/Bpimple/jr1.gif
+	move    3
+	attack  105 133 53 53 25 1 1 0 8 5
+	jugglecost 7
+	dropv   1.5 2.5 0
+	frame	data/chars/Bpimple/jr2.gif
+	attack  98 112 46 46 25 1 1 0 8 5
+	jugglecost 7
+	dropv   1.5 2.5 0
+	frame	data/chars/Bpimple/jr3.gif
+	attack  0
+	frame	data/chars/Bpimple/jr4.gif
+	delay   10
+	frame	data/chars/Bpimple/j6.gif
+
+anim jump
+	loop	0
+	delay	20
+	offset	88 195
+	bbox	82 125 20 50
+	frame	data/chars/Bpimple/j1.gif
+	delay   12
+	frame	data/chars/Bpimple/j2.gif
+	frame	data/chars/Bpimple/j2.gif
+	frame	data/chars/Bpimple/j2.gif
+
+anim jumpattack
+	loop	0
+	delay	10
+	offset	88 195
+	bbox	82 125 20 50
+	jumpframe 0 -3 2 0
+	landframe 5
+	sound   data/sounds2/punch2.wav
+	frame	data/chars/Bpimple/j3.gif
+	delay   6
+        hitfx   data/sounds2/beat8.wav
+	attack  85 155 40 35 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Bpimple/j4.gif
+	frame	data/chars/Bpimple/j5.gif
+	frame	data/chars/Bpimple/j6.gif
+	attack  0
+	frame	data/chars/Bpimple/j6.gif
+	delay   19
+	frame	data/chars/Bpimple/rise1.gif
+
+anim pain
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+	frame	data/chars/Bpimple/gr.gif
+	frame	data/chars/Bpimple/gr.gif
+	frame	data/chars/Bpimple/gr.gif
+	delay   13
+	frame	data/chars/Bpimple/gr.gif
+
+anim pain2
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+        frame   data/chars/Bpimple/gr.gif
+	delay   45
+        frame   data/chars/Bpimple/pain.gif
+
+anim pain3
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+        frame   data/chars/Bpimple/gr.gif
+        frame   data/chars/Bpimple/gr.gif
+        frame   data/chars/Bpimple/pain.gif
+	delay   13
+        frame   data/chars/Bpimple/gr.gif
+
+anim pain4
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+        frame   data/chars/Bpimple/gr.gif
+	delay   45
+        frame   data/chars/Bpimple/pain.gif
+
+anim pain5
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+	move    1
+        frame   data/chars/Bpimple/gr.gif
+	move    -1
+        frame   data/chars/Bpimple/gr.gif
+	move    1
+        frame   data/chars/Bpimple/gr.gif
+	move    -1
+        frame   data/chars/Bpimple/gr.gif
+	move    1
+        frame   data/chars/Bpimple/gr.gif
+	move    -1
+        frame   data/chars/Bpimple/gr.gif
+	move    1
+        frame   data/chars/Bpimple/gr.gif
+	move    -1
+        frame   data/chars/Bpimple/gr.gif
+	move    1
+        frame   data/chars/Bpimple/gr.gif
+	move    -1
+        frame   data/chars/Bpimple/gr.gif
+	move    1
+        frame   data/chars/Bpimple/gr.gif
+
+anim fall 
+	loop	0
+	delay   60
+	offset	88 195
+	delay   60
+	bbox    0
+	landframe  2
+        frame      data/chars/Bpimple/fall1.gif
+	delay      999
+        frame      data/chars/Bpimple/fall1.gif
+	sound      data/sounds2/fall2.wav
+	delay      10
+        frame      data/chars/Bpimple/fall4.gif
+
+anim fall6
+	loop	0
+	offset	88 195
+	delay   60
+	 bbox       66 128 42 45
+	 landframe  2
+         frame      data/chars/Bpimple/fall1.gif
+	 delay      999
+         frame      data/chars/Bpimple/fall1.gif
+	 delay      12
+	 bbox       0 0 0 0
+         frame      data/chars/Bpimple/fall4.gif
+	 sound      data/sounds2/fall1.wav
+         frame      data/chars/Bpimple/fall4.gif
+
+anim rise
+	loop	0
+	offset	88 195
+	delay	10
+	frame	data/chars/Bpimple/rise1.gif
+	frame	data/chars/Bpimple/rise2.gif
+
+anim death
+	loop	0
+	offset	88 195
+	delay   50
+	frame	data/chars/Bpimple/fall4.gif
+
+#SCRIPTED SLAMS
+anim fall80
+	 loop       0
+	 delay      5000
+	 bbox       0
+	 offset	    88 195
+         frame      data/chars/Bpimple/pain.gif #follow30
+         frame      data/chars/Bpimple/gr.gif
+         frame      data/chars/Bpimple/pain.gif #follow31
+         frame      data/chars/Bpimple/pain.gif #follow 1 #follow27
+         frame      data/chars/Bpimple/gr.gif #follow32
+         frame      data/chars/Bpimple/pain.gif
+	 offset     84 110
+         frame      data/chars/0misc/empty.gif   #mcguire megaton press
+         frame      data/chars/2wllms/pain08.gif
+         frame      data/chars/2wllms/pain09.gif
+	 offset	    88 195
+         frame      data/chars/Bpimple/fall1.gif #follow15
+#10
+	 offset	    88 195
+         frame      data/chars/Bpimple/fall1.gif
+	 offset     84 110
+         frame      data/chars/2wllms/fall03.gif #follow12
+         frame      data/chars/2wllms/fall04.gif #follow17
+         frame      data/chars/2wllms/fall05.gif
+         frame      data/chars/2wllms/fall06.gif #follow 2
+         frame      data/chars/2wllms/fall07.gif
+         frame      data/chars/2wllms/fall08.gif #follow20 #follow25 #follow26
+         frame      data/chars/2wllms/fall09.gif #follow 7
+         frame      data/chars/2wllms/fall10.gif #follow 8
+         frame      data/chars/2wllms/fall11.gif #follow 3
+#20
+	 offset	    88 195
+         frame      data/chars/Bpimple/fall1.gif
+         frame      data/chars/Bpimple/fall1.gif
+         frame      data/chars/Bpimple/fall4.gif
+         frame      data/chars/2wllms/fall16.gif
+         frame      data/chars/2wllms/fall17.gif #follow21
+         frame      data/chars/2wllms/fall18.gif
+         frame      data/chars/2wllms/fall19.gif
+         frame      data/chars/2wllms/fall20.gif
+         frame      data/chars/2wllms/fall21.gif
+         frame      data/chars/2wllms/fall22.gif #follow 9
+#30
+         frame      data/chars/2wllms/fall23.gif #follow28
+         frame      data/chars/2wllms/fall24.gif #follow18 follow19
+         frame      data/chars/2wllms/fall25.gif #follow14
+         frame      data/chars/2wllms/fall26.gif #follow22 #follow23 #follow24
+         frame      data/chars/2wllms/fall27.gif #follow40
+         frame      data/chars/2wllms/fall28.gif #follow38
+         frame      data/chars/2wllms/fall29.gif
+         frame      data/chars/2wllms/fall30.gif
+         frame      data/chars/2wllms/fall31.gif
+	 offset     80 129
+         frame      data/chars/Bpimple/backb01.gif
+	 offset     84 110
+#40
+         frame      data/chars/2wllms/painh2.gif #follow34
+         frame      data/chars/2wllms/painh3.gif #follow35
+         frame      data/chars/2wllms/painh4.gif #follow37
+         frame      data/chars/Brash/fallc1.gif
+         frame      data/chars/Brash/fallc2.gif
+         frame      data/chars/Brash/fallc3.gif
+
+
+
+
+
+

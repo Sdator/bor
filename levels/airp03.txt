@@ -1,0 +1,221 @@
+loadingbg       data/bgs/loading2.gif 1 -999 -999 100 -999 -999
+music           data/music/01airp.ogg 1
+at              0
+background	data/bgs/03airp/b01.gif
+panel		data/bgs/03airp/n01.gif
+direction       both
+scrollspeed     0.5
+light  		10  20
+at       	0
+settime         0
+notime          1
+noslow          1
+order	        a
+cameratype      1
+#type            1
+spawn1          60 20
+spawn2          70 25
+updatescript    data/scripts/traileru.c
+
+wall    655 177 0 0 1000 1000 20 1000
+
+group   1 1
+at      0
+
+####### GROUP 1
+
+blockade 0
+at      0
+
+scrollx 0 135
+at      0
+
+group   3 3 
+at      90
+
+spawn   williams
+map     2
+health  80
+coords  300 190
+at      90
+
+spawn   baker
+map     1
+health  80
+coords  -50 190
+at      90
+
+spawn   roper
+map     2
+health  80
+coords  300 220
+at      90
+
+spawn   williams
+map     1
+health  80
+coords  300 200
+at      90
+
+group   1 1
+at      0
+
+scrollx 0 286
+at      0
+
+####### GROUP 2
+
+blockade 285
+at      285
+
+scrollx 285 435
+at      285
+
+group   3 3 
+at      285
+
+spawn   baker 
+map     1
+health  80
+coords  199 175 45
+at      285
+
+spawn   linda1 
+health  80
+item    knife01
+coords  209 175 50
+at      285
+
+spawn   roper
+map     3
+health  80
+coords  -50 190
+at      285
+
+spawn   williams
+map     3
+health  80
+coords  300 190
+at      285
+
+spawn   roper
+map     4
+health  80
+coords  -50 190
+at      285
+
+group   1 1
+at      285
+
+scrollx 285 435
+at      285
+
+####### GROUP 3
+
+blockade 434
+at      434
+
+scrollx 434 790
+at      434
+
+group   3 3 
+at      619
+
+spawn   baker
+map     2
+health  80
+coords  300 190
+at      619
+
+spawn   Jeff
+health  250
+2phealth 300
+coords  300 220
+at      619
+
+spawn   williams
+weapon  grenade0
+map     4
+health  80
+coords  -50 220
+at      619
+
+spawn   roper
+map     4
+health  80
+coords  -50 190
+at      619
+
+2pspawn   williams
+map     4
+health  80
+coords  -50 220
+at      619
+
+group   1 1
+at      619
+
+scrollx 619 790
+at      619
+
+####### GROUP 4
+
+blockade 789 1024
+at      789
+
+scrollx 789 1024
+at      789
+
+group   3 3 
+at      789
+
+spawn   williams
+health  80
+coords  -50 190
+at      789
+
+spawn   linda1
+health  80
+item    knife01
+coords  300 190
+at      789
+
+spawn   roper
+health  80
+coords  300 220
+at      789
+
+spawn   baker
+map     1
+health  80
+coords  -50 190
+at      789
+
+spawn   roper
+map     1
+health  80
+coords  300 190
+at      789
+
+spawn   bjackson
+item    slowitm
+health  540
+2phealth 600
+coords  300 190
+at      789
+
+group   1 1
+at      789
+
+spawn   stagetr
+flip    1
+coords  0 232
+at      789
+
+
+
+
+
+
+
+

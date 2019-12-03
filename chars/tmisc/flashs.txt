@@ -1,0 +1,37 @@
+name	   Flashs
+type	   none
+shadow	   0
+toflip     1
+alpha      1
+
+palette    data/chars/Tmisc/slash01.gif
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    199 106
+	 flipframe 1
+	 frame     data/chars/Tmisc/empty.gif
+	 frame     data/chars/Tmisc/slash01.gif
+	 frame     data/chars/Tmisc/slash02.gif
+	 frame     data/chars/Tmisc/slash03.gif
+	 frame     data/chars/Tmisc/slash04.gif
+	 frame     data/chars/Tmisc/slash05.gif
+
+
+anim attack
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+

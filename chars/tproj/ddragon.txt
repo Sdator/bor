@@ -1,0 +1,128 @@
+name	  ddragon
+health    0
+speed     15
+remove    0
+type      none
+offscreenkill  450
+subject_to_wall 0
+subject_to_hole 0
+hostile   enemy obstacle npc
+candamage enemy obstacle npc
+nolife    1
+alpha     1
+lifespan  2
+
+
+anim idle
+	loop	0
+	delay	2
+	offset	440 23
+	seta    0
+	hitflash  flashh
+	hitfx   data/sounds2/beath.wav
+	attack  97 6 316 57 75 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag05.gif
+	sound   data/sounds2/dragon.wav
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag06.gif
+	delay   2
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	attack  0
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/empty.gif
+
+
+
+
+
+
+
+
+
+
+

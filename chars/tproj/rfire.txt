@@ -1,0 +1,34 @@
+name	  rfire
+health    0
+speed     20
+type      enemy
+subtype   chase
+hostile   enemy obstacle npc
+candamage enemy obstacle npc
+nolife    1
+alpha     1
+remove    1
+lifespan  2
+
+anim idle
+	loop	1
+	delay	4
+	offset	24 15
+	hitflash flashh
+	fastattack 1
+	hitfx   data/sounds2/beat1.wav
+	attack3 8 16 35 18 5 0 1 0 10 3
+	movea   -3
+	frame	data/chars/tproj/rfire01.gif
+	frame	data/chars/tproj/rfire02.gif
+	frame	data/chars/tproj/rfire03.gif
+	movea   3
+	frame	data/chars/tproj/rfire04.gif
+	frame	data/chars/tproj/rfire05.gif
+	frame	data/chars/tproj/rfire06.gif
+
+
+
+
+
+

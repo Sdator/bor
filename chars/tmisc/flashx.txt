@@ -1,0 +1,34 @@
+name	   Flashx
+type	   none
+shadow	   0
+toflip     1
+alpha      1
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    134 73
+	 frame     data/chars/Tmisc/xflash01.gif
+	 frame     data/chars/Tmisc/xflash02.gif
+	 frame     data/chars/Tmisc/xflash03.gif
+	 frame     data/chars/Tmisc/xflash04.gif
+	 frame     data/chars/Tmisc/xflash05.gif
+	 frame     data/chars/Tmisc/xflash06.gif
+	 frame     data/chars/Tmisc/xflash07.gif
+
+anim attack
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+

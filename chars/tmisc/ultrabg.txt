@@ -1,0 +1,40 @@
+name	   ultrabg
+type	   text
+subtype    noskip
+facing     1
+shadow	   0
+alpha      1
+lifespan   1
+setlayer   999
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    0 244
+	 frame     data/chars/Tmisc/hbg01.gif
+	 frame     data/chars/Tmisc/hbg02.gif
+	 frame     data/chars/Tmisc/hbg03.gif
+	 frame     data/chars/Tmisc/hbg04.gif
+	 frame     data/chars/Tmisc/hbg05.gif
+	 frame     data/chars/Tmisc/hbg06.gif
+	 frame     data/chars/Tmisc/hbg07.gif
+	 frame     data/chars/Tmisc/hbg08.gif
+	 frame     data/chars/Tmisc/hbg09.gif
+	 frame     data/chars/Tmisc/hbg10.gif
+	 frame     data/chars/Tmisc/hbg11.gif
+	 frame     data/chars/Tmisc/hbg12.gif
+	 frame     data/chars/Tmisc/hbg13.gif
+	 frame     data/chars/Tmisc/hbg14.gif
+	 frame     data/chars/Tmisc/hbg15.gif
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+name	   eslam
+type	   none
+shadow	   0
+#alpha      1
+candamage  enemy obstacle
+lifespan   1
+
+anim idle
+	loop      0
+	delay     5
+	offset    74 89
+	attack    52 83 47 12 25 1 1 0 0
+	hitfx     data/sounds/beat2.wav
+	dropv     2 2 0
+	quakeframe 1 2 2
+	frame     data/chars/emisc/eslam01.gif
+	attack    43 82 64 15 25 1 1 0 0
+	frame     data/chars/emisc/eslam02.gif
+	attack    31 78 89 19 25 1 1 0 0
+	frame     data/chars/emisc/eslam03.gif
+	attack    20 70 109 27 25 1 1 0 0
+	frame     data/chars/emisc/eslam04.gif
+	frame     data/chars/emisc/eslam05.gif
+	attack    0
+	frame     data/chars/emisc/eslam06.gif
+	delay     1
+	frame     data/chars/emisc/eslam07.gif
+	delay     1
+	frame     data/chars/emisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

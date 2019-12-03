@@ -1,0 +1,8 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+music           data/scenes/titl2ch/dragon2.ogg 
+animation	data/scenes/titl2ch/000.gif 0 0 0 1
+animation	data/scenes/titl2ch/titl2ch1.gif 0 0 0 1
+animation	data/scenes/titl2ch/titl2ch2.gif 0 0 0 1

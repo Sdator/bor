@@ -1,0 +1,117 @@
+name	   btheli
+type	   panel
+speed      10
+facing     1
+shadow	   0
+lifespan   5
+setlayer   999
+
+load       btbomb
+
+anim idle
+	loop      0
+	delay     3
+	offset    60 0
+	bbox      0
+	movea     -2
+	custentity btbomb
+	spawnframe 36 0 244 0 0
+	drawmethod 16 16 0 0 0 0 -1 0 0 0
+	sound     data/sounds2/heli2.wav
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/heli02.gif
+	drawmethod 32 32 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli03.gif
+	frame     data/chars/bmisc/heli04.gif
+	drawmethod 48 48  0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli05.gif
+	frame     data/chars/bmisc/heli01.gif
+	drawmethod 64 64 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli02.gif
+	frame     data/chars/bmisc/heli03.gif
+	drawmethod 80 80 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli04.gif
+	frame     data/chars/bmisc/heli05.gif
+	drawmethod 96 96 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/heli02.gif
+	drawmethod 112 112 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli03.gif
+	frame     data/chars/bmisc/heli04.gif
+	drawmethod 128 128 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli05.gif
+	frame     data/chars/bmisc/heli01.gif
+	drawmethod 144 144 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli02.gif
+	frame     data/chars/bmisc/heli03.gif
+	drawmethod 160 160 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli04.gif
+	frame     data/chars/bmisc/heli05.gif
+	drawmethod 176 176 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/heli02.gif
+	drawmethod 192 192 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli03.gif
+	frame     data/chars/bmisc/heli04.gif
+	drawmethod 208 208 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli05.gif
+	frame     data/chars/bmisc/heli01.gif
+	drawmethod 224 224 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli02.gif
+	frame     data/chars/bmisc/heli03.gif
+	drawmethod 240 240 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli04.gif
+	frame     data/chars/bmisc/heli05.gif
+	nodrawmethod
+	movea     0
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/heli02.gif
+	drawmethod 272 272 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli03.gif
+	frame     data/chars/bmisc/heli04.gif
+	drawmethod 288 288 0 0 0 0 -1 0 0 0
+	movea     5
+	frame     data/chars/bmisc/heli05.gif
+	frame     data/chars/bmisc/heli01.gif
+	drawmethod 304 304 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli02.gif
+	frame     data/chars/bmisc/heli03.gif
+	drawmethod 320 320 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli04.gif
+	frame     data/chars/bmisc/heli05.gif
+	drawmethod 336 336 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/heli02.gif
+	drawmethod 352 352 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli03.gif
+	frame     data/chars/bmisc/heli04.gif
+	drawmethod 368 368 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli05.gif
+	frame     data/chars/bmisc/heli01.gif
+	drawmethod 384 384 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli02.gif
+	frame     data/chars/bmisc/heli03.gif
+	drawmethod 400 400 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli04.gif
+	frame     data/chars/bmisc/heli05.gif
+	drawmethod 416 416 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/heli02.gif
+	drawmethod 432 432 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli03.gif
+	frame     data/chars/bmisc/heli04.gif
+	drawmethod 448 448 0 0 0 0 -1 0 0 0
+	frame     data/chars/bmisc/heli05.gif
+	frame     data/chars/bmisc/heli01.gif
+	frame     data/chars/bmisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+

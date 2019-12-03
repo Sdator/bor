@@ -1,0 +1,81 @@
+name    bomb1
+health  1
+type	enemy
+speed	7
+jumpheight 2
+remove  0
+score   0 -1
+noquake 1
+candamage  player obstacle npc
+
+palette    data/chars/emisc/bomb1.gif
+
+anim idle
+	loop   0
+	delay  2
+	offset 38 29
+	bbox   0
+	sound  data/sounds/punch2.wav
+	attack 11 13 54 16 25 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bomb1.gif
+
+anim attack1
+	loop   0
+	delay  4
+	offset 55 85
+	bbox   0
+	sound  data/sounds/misil.wav
+	hitfx  data/sounds/beat8.wav
+	attack 38 54 41 34 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex01.gif
+	attack 33 49 53 39 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex02.gif
+	attack 21 34 76 57 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex03.gif
+	attack 19 35 79 60 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex04.gif
+	attack 9 21 102 73 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex05.gif
+	attack 5 25 109 71 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex06.gif
+	attack 0
+	frame  data/chars/emisc/bex07.gif
+	frame  data/chars/emisc/bex08.gif
+
+anim death
+	loop   0
+	delay  4
+	offset 55 85
+	bbox   0
+	sound  data/sounds/misil.wav
+	hitfx  data/sounds/beat8.wav
+	attack 38 54 41 34 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex01.gif
+	attack 33 49 53 39 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex02.gif
+	attack 21 34 76 57 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex03.gif
+	attack 19 35 79 60 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex04.gif
+	attack 9 21 102 73 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex05.gif
+	attack 5 25 109 71 20 1 1 0 10
+	dropv  3 4 0
+	frame  data/chars/emisc/bex06.gif
+	attack 0
+	frame  data/chars/emisc/bex07.gif
+	frame  data/chars/emisc/bex08.gif
+
+

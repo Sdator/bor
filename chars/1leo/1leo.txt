@@ -1,0 +1,1010 @@
+name            Leo
+type            player
+health          100
+mp              100
+jugglepoints    20
+candamage       enemy obstacle pshot npc
+subject_to_obstacle 0
+speed           8
+running         15 2 2 0 0
+jumpheight      3.5
+jumpmove        3 3
+gfxshadow       1
+atchain         1 2 3 4
+noquake         1
+makeinv         2
+falldie         2
+riseinv         1
+jumpspeed       8
+grabdistance    35
+antigravity     40
+animationscript data/scripts/lib001.c
+didhitscript    data/scripts/didhit.c
+ondrawscript	data/scripts/shadowon.c
+icon            data/chars/1leo/icon.gif 1
+#parrow         
+#parrow2   
+#parrow3
+#parrow4
+
+load    lfury
+load    ultrabg
+
+com	f d a     freespecial1
+com     a4        freespecial2
+com     a2        freespecial3
+com     a3        freespecial5 
+
+palette           data/chars/1leo/idle01.gif
+
+anim waiting
+	loop       0
+	delay      4
+	offset     46 189
+	bbox       0
+	fshadow    0
+        frame      data/chars/1leo/sel01.gif
+
+anim select
+	loop       0
+	delay      4
+	offset     46 189
+	bbox       0
+	fshadow    0
+        frame      data/chars/1leo/sel02.gif
+        frame      data/chars/1leo/sel01.gif
+        frame      data/chars/1leo/sel02.gif
+        frame      data/chars/1leo/sel01.gif
+        frame      data/chars/1leo/sel02.gif
+        frame      data/chars/1leo/sel01.gif
+        frame      data/chars/1leo/sel02.gif
+        frame      data/chars/1leo/sel01.gif
+        frame      data/chars/1leo/sel02.gif
+        frame      data/chars/1leo/sel01.gif
+	delay      3
+	sound      data/sounds2/get.wav
+	drawmethod 16 16 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 32 32 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 48 48  0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 64 64 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 80 80 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 96 96 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 112 112 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 128 128 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 144 144 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 160 160 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 176 176 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 192 192 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 208 208 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 224 224 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	drawmethod 240 240 0 0 0 0 -1 0 0 0
+        frame      data/chars/1leo/sel03.gif
+	nodrawmethod
+        frame      data/chars/1leo/sel03.gif
+	delay      5
+        frame      data/chars/1leo/sel04.gif
+        frame      data/chars/1leo/sel05.gif
+        frame      data/chars/1leo/sel04.gif
+        frame      data/chars/1leo/sel05.gif
+        frame      data/chars/1leo/sel04.gif
+        frame      data/chars/1leo/sel05.gif
+
+anim follow150 #credix scene
+	 loop       1
+	 delay      10
+	 offset     1 1
+	 bbox       0
+	 fshadow    0
+         frame      data/chars/0misc/empty.gif
+
+anim idle
+@cmd clearL
+	loop       1
+	delay      200
+	offset     84 110
+	bbox       72 62 27 45
+	frame      data/chars/1leo/idle01.gif
+	delay      100
+	frame      data/chars/1leo/idle02.gif
+	delay      300
+	frame      data/chars/1leo/idle01.gif
+	delay      15
+	frame      data/chars/1leo/a401.gif
+	frame      data/chars/1leo/idle03.gif
+	frame      data/chars/1leo/idle04.gif
+	delay      30
+	frame      data/chars/1leo/idle05.gif
+	delay      15
+	frame      data/chars/1leo/idle04.gif
+	frame      data/chars/1leo/idle03.gif
+	frame      data/chars/1leo/idle04.gif
+	delay      30
+	frame      data/chars/1leo/idle05.gif
+	delay      15
+	frame      data/chars/1leo/idle04.gif
+	frame      data/chars/1leo/idle03.gif
+	frame      data/chars/1leo/idle04.gif
+	delay      30
+	frame      data/chars/1leo/idle05.gif
+	delay      15
+	frame      data/chars/1leo/idle04.gif
+	frame      data/chars/1leo/idle03.gif
+	frame      data/chars/1leo/a401.gif
+
+anim walk
+	loop       1
+	delay      8
+	offset     72 110
+	bbox       56 62 34 45
+	frame      data/chars/1leo/wk01.gif
+	frame      data/chars/1leo/wk02.gif
+	delay      10
+	frame      data/chars/1leo/wk03.gif
+	delay      7
+	frame      data/chars/1leo/wk04.gif
+	frame      data/chars/1leo/wk05.gif
+	delay      10
+	frame      data/chars/1leo/wk06.gif
+
+anim up
+	loop       1
+	delay      8
+	offset     72 110
+	bbox       56 62 34 45
+	frame      data/chars/1leo/wku01.gif
+	frame      data/chars/1leo/wku02.gif
+	delay      10
+	frame      data/chars/1leo/wku03.gif
+	delay      7
+	frame      data/chars/1leo/wku04.gif
+	frame      data/chars/1leo/wku05.gif
+	delay      10
+	frame      data/chars/1leo/wku06.gif
+
+anim run
+@script
+void self = getlocalvar("self"); //get the self var
+void power = getentityproperty(self,"mp"); // get target's current mp
+changeentityproperty(self, "mp", power+1); 
+@end_script
+	loop       1
+	delay      7
+	offset     72 110
+	bbox       56 62 34 45
+	frame      data/chars/1leo/run1.gif
+        frame      data/chars/1leo/run2.gif
+        frame      data/chars/1leo/run3.gif
+        frame      data/chars/1leo/run4.gif
+        frame      data/chars/1leo/run5.gif
+        frame      data/chars/1leo/run6.gif
+        frame      data/chars/1leo/run7.gif
+        frame      data/chars/1leo/run8.gif
+
+anim attack1
+	loop       0
+	delay      6
+	offset     84 110
+	bbox       72 62 27 45
+	sound      data/sounds2/punch.wav
+	hitfx      data/sounds2/beat3.wav
+	frame      data/chars/1leo/a101.gif
+	frame      data/chars/1leo/a102.gif
+	delay      4
+	frame      data/chars/1leo/a103.gif
+	attack3    93 54 37 50 8 0 0 0 8 5
+	dropv      1.5 1 0
+	forcedirection -1
+	frame      data/chars/1leo/a104.gif
+	attack3    0
+	delay      9
+	frame      data/chars/1leo/a105.gif
+	delay      6
+	frame      data/chars/1leo/a302.gif
+
+anim attack2
+	loop       0
+	delay      6
+	offset     84 110
+	bbox       72 62 27 45
+	sound      data/sounds2/punch.wav
+	hitfx      data/sounds2/beat4.wav
+	frame      data/chars/1leo/a201.gif
+	frame      data/chars/1leo/a202.gif
+	attack4    92 54 57 20 8 0 0 0 8 3
+	jugglecost 7
+	dropv      1.5 1 0
+	forcedirection -1
+	frame      data/chars/1leo/a203.gif
+	attack4    0
+	frame      data/chars/1leo/a204.gif
+	delay      7
+	frame      data/chars/1leo/a205.gif
+	frame      data/chars/1leo/a206.gif
+
+anim attack3
+	loop       0
+	delay      6
+	offset     84 110
+	bbox       72 62 27 45
+	sound      data/sounds2/punch.wav
+	hitfx      data/sounds2/beat5.wav
+	move       3
+	frame      data/chars/1leo/a101.gif
+	frame      data/chars/1leo/a202.gif
+	frame      data/chars/1leo/a301.gif
+	move       0
+	frame      data/chars/1leo/a302.gif
+	attack7    88 71 38 20 9 0 0 0 8 3 
+	jugglecost 7
+	dropv      1.5 1 0
+	forcedirection -1
+	frame      data/chars/1leo/a303.gif
+	delay      7
+	attack7    0
+	frame      data/chars/1leo/a304.gif
+	frame      data/chars/1leo/a401.gif
+
+anim attack4
+	loop       0
+	delay      7
+	offset     84 110
+	bbox       72 62 27 45
+	sound      data/sounds2/punch.wav
+	hitfx      data/sounds2/beat2.wav
+@cmd ani001 "ANI_FREESPECIAL2" 0 10 0 0 0 0 0 0 0 0
+	frame      data/chars/1leo/a401.gif
+	frame      data/chars/1leo/b101.gif
+	frame      data/chars/1leo/b102.gif
+	delay      10
+	sound      data/sounds2/turtle01.wav
+	attack     97 67 47 22 12 1 1 0 0 8 3
+	jugglecost 7
+	dropv      1.5 2 0
+	forcedirection -1
+	frame      data/chars/1leo/b103.gif
+	attack     0
+	delay      8
+	frame      data/chars/1leo/b102.gif
+	frame      data/chars/1leo/b101.gif
+
+anim runattack
+	loop       0
+	delay      2
+	offset     72 110
+	bbox       56 62 34 45
+	followanim 2
+	followcond 3
+	move       4
+	sound      data/sounds2/punch2.wav
+	hitfx      data/sounds2/beat7.wav
+	attack    77 67 21 44 5 0 0 0 0 8 3
+	jugglecost 7
+	dropv      1.5 1 0
+	forcedirection -1
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	frame      data/chars/1leo/ratck.gif
+	delay      15
+	move       0
+	attack     0 0 0 0
+	frame      data/chars/1leo/ratck.gif
+
+anim follow2
+	loop       0
+	delay      2
+	offset     72 110
+	bbox       56 62 34 45
+	attack     0
+	frame      data/chars/1leo/ratck.gif
+	delay      20
+	frame      data/chars/1leo/ratck.gif
+
+anim jump
+	loop       0
+	delay      23
+	offset     72 110
+	bbox       56 62 34 45
+        frame      data/chars/1leo/ju01.gif
+	delay      10
+        frame      data/chars/1leo/ju02.gif
+        frame      data/chars/1leo/ju03.gif
+        frame      data/chars/1leo/ju04.gif
+        frame      data/chars/1leo/ju05.gif
+        frame      data/chars/1leo/ju06.gif
+
+anim jumpattack
+	loop       0
+	delay      6
+	offset     72 110
+	bbox       57 65 25 26
+	dive       2 3
+	sound      data/sounds2/punch2.wav
+	hitfx      data/sounds2/beat1.wav
+        frame      data/chars/1leo/ak1.gif
+	attack     65 79 36 30 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+        frame      data/chars/1leo/ak2.gif
+
+anim jumpattack2
+	loop       0
+	delay      9
+	offset     72 110
+	bbox       56 62 34 45
+	sound      data/sounds2/punch.wav
+        frame      data/chars/1leo/ap1.gif
+        frame      data/chars/1leo/ap2.gif
+	hitfx      data/sounds2/beat4.wav
+	attack     78 73 33 28 15 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+        frame      data/chars/1leo/ap3.gif
+	attack     78 69 44 24 15 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+        frame      data/chars/1leo/ap4.gif
+	attack     0 0 0 0
+        frame      data/chars/1leo/ap5.gif
+
+anim runjumpattack
+	loop       0
+	delay      6
+	offset     72 110
+	bbox       57 65 25 26
+	sound      data/sounds2/turtle01.wav
+        frame      data/chars/1leo/ak3.gif
+	hitfx      data/sounds2/beat1.wav
+	attack     66 76 46 21 10 1 0 0 8 3
+	jugglecost 7
+	dropv      1.5 2 0
+	forcedirection -1
+        frame      data/chars/1leo/ak4.gif
+
+anim special
+	loop       0
+	delay      6
+	offset     84 110
+	bbox       0
+	energycost 10
+	mponly     2
+	sound      data/sounds2/turtle02.wav
+	hitfx      data/sounds2/beat3.wav
+        frame      data/chars/1leo/hitall1.gif
+	delay      5
+	attack     31 62 51 16 17 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/hitall2.gif
+	attack     57 64 36 23 17 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/hitall3.gif
+	attack     81 65 35 36 17 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/hitall4.gif
+	attack     87 61 60 21 17 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/hitall5.gif
+	delay      12
+	attack     40 49 35 41 17 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/hitall6.gif
+
+anim spain
+	loop       0
+	delay      6
+	offset     72 110
+	bbox       0
+        frame      data/chars/1leo/shock01.gif
+        frame      data/chars/1leo/shock02.gif
+        frame      data/chars/1leo/shock01.gif
+        frame      data/chars/1leo/shock02.gif
+        frame      data/chars/1leo/shock01.gif
+        frame      data/chars/1leo/shock02.gif
+        frame      data/chars/1leo/pain3.gif
+
+anim shock
+	loop       0
+	delay      6
+	offset     72 110
+	bbox       0
+	landframe  2
+        frame      data/chars/1leo/shock01.gif
+        frame      data/chars/1leo/shock02.gif
+@cmd   updateframe getlocalvar("self") 0
+	delay      9
+        frame      data/chars/1leo/rise1.gif
+        frame      data/chars/1leo/rise2.gif
+
+anim fall
+	loop       0
+	delay      60
+	offset     72 110
+	bbox       0
+	landframe  2
+        frame      data/chars/1leo/fall1.gif
+	delay      999
+        frame      data/chars/1leo/fall2.gif
+	sound      data/sounds2/fall2.wav
+	delay      10
+        frame      data/chars/1leo/fall3.gif
+
+anim rise
+	loop       0
+	delay      9
+	offset     72 110
+	bbox       0
+        frame      data/chars/1leo/rise1.gif
+        frame      data/chars/1leo/rise2.gif
+
+anim death
+	 loop       0
+	 delay      20
+	 offset     72 110
+	 sound      data/sounds2/death.wav
+         frame      data/chars/1leo/die1.gif
+
+##################################################special moves
+
+anim freespecial1
+#f d a - hard attack
+	loop       0
+	delay      7
+	offset     72 110
+	bbox       56 62 34 45
+	jumpframe  0 1.7 0 0
+	energycost 40
+	mponly     1
+	sound      data/sounds2/punch.wav
+        frame      data/chars/1leo/ap1.gif
+        frame      data/chars/1leo/ap2.gif
+	hitfx      data/sounds2/beat5.wav
+	attack11   75 72 69 40 15 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/ap3.gif
+	attack11   76 61 72 37 15 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+        frame      data/chars/1leo/ap4.gif
+	attack     0 0 0 0
+        frame      data/chars/1leo/ap5.gif
+
+anim freespecial2
+#endless screw
+	loop       0
+	delay      5
+	offset     84 110
+	bbox       72 62 27 45
+	fastattack 1
+	energycost 40
+	mponly     1
+	sound      data/sounds2/leo01.wav
+	hitfx      data/sounds2/beat4.wav
+	frame      data/chars/1leo/a201.gif
+	delay      2
+	sound      data/sounds2/leo2.wav
+	attack     33 56 103 9 2 0 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp01.gif
+	attack     0
+	frame      data/chars/1leo/sp01.gif
+	sound      data/sounds2/punch.wav
+	frame      data/chars/1leo/sp02.gif
+	frame      data/chars/1leo/sp02.gif
+	attack     27 56 114 10 2 0 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp03.gif
+	attack     0
+	frame      data/chars/1leo/sp03.gif
+	frame      data/chars/1leo/sp04.gif
+	frame      data/chars/1leo/sp04.gif
+	attack     32 56 102 11 2 0 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp05.gif
+	attack     0
+	frame      data/chars/1leo/sp05.gif
+	sound      data/sounds2/punch.wav
+	frame      data/chars/1leo/sp06.gif
+	frame      data/chars/1leo/sp06.gif
+	move       3
+	attack     29 56 112 10 2 0 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp07.gif
+	attack     0    
+	frame      data/chars/1leo/sp07.gif
+	frame      data/chars/1leo/sp08.gif
+	frame      data/chars/1leo/sp08.gif
+	attack     33 56 103 9 2 0 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp01.gif
+	attack     0
+	frame      data/chars/1leo/sp01.gif
+	sound      data/sounds2/punch.wav
+	frame      data/chars/1leo/sp02.gif
+	frame      data/chars/1leo/sp02.gif
+	move       6
+	attack     27 56 114 10 2 0 0 0 8 25
+	forcedirection -1
+	frame      data/chars/1leo/sp03.gif
+	attack     0
+	frame      data/chars/1leo/sp03.gif
+	frame      data/chars/1leo/sp04.gif
+	frame      data/chars/1leo/sp04.gif
+	attack     32 56 102 11 2 0 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp05.gif
+	attack     0
+	frame      data/chars/1leo/sp05.gif
+	sound      data/sounds2/punch.wav
+	frame      data/chars/1leo/sp06.gif
+	frame      data/chars/1leo/sp06.gif
+	attack     29 56 112 10 8 1 0 0 8 25
+	forcedirection -1
+	jugglecost 7
+	dropv      1.5 2.5 0
+	frame      data/chars/1leo/sp07.gif
+	attack     0    
+	frame      data/chars/1leo/sp07.gif
+	frame      data/chars/1leo/sp08.gif
+	frame      data/chars/1leo/sp08.gif
+
+anim freespecial3
+#shinning cutter uppercut
+	loop       0
+	delay      6
+	energycost 20
+	mponly     1
+	offset     84 110
+	bbox       72 62 27 45
+	jumpframe  2 3 0 0
+	landframe  23
+	fastattack 1
+	frame      data/chars/1leo/a401.gif
+	frame      data/chars/1leo/a402.gif
+	delay      2
+	move       3
+	offset     72 110
+	bbox       56 64 32 29
+	sound      data/sounds2/leo02.wav
+	hitfx      data/sounds2/beat4.wav
+	attack     48 41 48 42 1 1 0 0 8 15
+	dropv      2 0.5 0
+	frame      data/chars/1leo/srk01.gif
+	attack     0
+	frame      data/chars/1leo/srk01.gif
+	hitfx      data/sounds2/beat5.wav
+	attack     63 55 44 48 1 1 0 0 8 15
+	dropv      2 0.5 0
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/srk02.gif
+	attack     0
+	frame      data/chars/1leo/srk02.gif
+	hitfx      data/sounds2/beat4.wav
+	attack     48 41 48 42 1 1 0 0 8 15
+	dropv      2 0.5 0
+	frame      data/chars/1leo/srk03.gif
+	attack     0
+	frame      data/chars/1leo/srk03.gif
+	hitfx      data/sounds2/beat5.wav
+	attack     48 41 48 42 1 1 0 0 8 15
+	dropv      2 0.5 0
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/srk04.gif
+	attack     0
+	frame      data/chars/1leo/srk04.gif
+	hitfx      data/sounds2/beat4.wav
+	attack     48 41 48 42  1 1 0 0 8 15
+	dropv      2 0.5 0
+	frame      data/chars/1leo/srk01.gif
+	attack     0
+	frame      data/chars/1leo/srk01.gif
+	hitfx      data/sounds2/beat5.wav
+	attack     63 55 44 48 1 1 0 0 8 15
+	dropv      2 0.5 0
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/srk02.gif
+	attack     0
+	frame      data/chars/1leo/srk02.gif
+	hitfx      data/sounds2/beat4.wav
+	attack     48 41 48 42 1 1 0 0 8 15
+	dropv      2 0.5 0
+	frame      data/chars/1leo/srk03.gif
+	attack     0
+	frame      data/chars/1leo/srk03.gif
+	hitfx      data/sounds2/beat5.wav
+	attack     48 41 48 42 1 1 0 0 8 15
+	jugglecost 7
+	dropv      2 0.5 0
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/srk04.gif
+	attack     0
+	frame      data/chars/1leo/srk04.gif
+	hitfx      data/sounds2/beat4.wav
+	attack     48 41 48 42 1 1 0 0 8 15
+	jugglecost 7
+	dropv      2 0.5 0
+	frame      data/chars/1leo/srk01.gif
+	attack     0
+	frame      data/chars/1leo/srk01.gif
+	hitfx      data/sounds2/beat3.wav
+	attack     63 55 44 48 10 1 0 0 8 15
+	jugglecost 7
+	dropv      2 1 0
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/srk02.gif
+	attack     0
+	frame      data/chars/1leo/srk02.gif
+	move       0
+	delay      100
+	frame      data/chars/1leo/ju06.gif
+	offset     84 110
+	bbox       0
+	delay      12
+	frame      data/chars/1leo/a402.gif
+
+anim freespecial5
+#SUPER
+@cmd shadow 10 5 60 6 2 200 250 200
+	loop       0
+	delay      6
+	offset     84 110
+	bbox       0
+	energycost 100
+	mponly     1
+	custentity ultrabg
+	spawnframe 0 0 244 0 1
+	custknife  lfury
+	throwframe 4
+	sound      data/sounds2/super.wav
+	frame      data/chars/1leo/a401.gif
+	delay      7
+	frame      data/chars/1leo/ultra01.gif
+	frame      data/chars/1leo/ultra02.gif
+	frame      data/chars/1leo/ultra03.gif
+	delay      4
+	frame      data/chars/1leo/ultra04.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra05.gif
+	sound      data/sounds2/turtle02.wav
+	frame      data/chars/1leo/ultra05.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra06.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra06.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra07.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra08.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra09.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra10.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra05.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra06.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra07.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra08.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra09.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra10.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra05.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra06.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra07.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra08.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra09.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra10.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra05.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra06.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra07.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra08.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra09.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra10.gif
+	frame      data/chars/1leo/ultra11.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra05.gif
+	frame      data/chars/1leo/ultra12.gif
+	sound      data/sounds2/punch2.wav
+	frame      data/chars/1leo/ultra06.gif
+	frame      data/chars/1leo/ultra11.gif
+	delay      7
+	frame      data/chars/1leo/ultra04.gif
+	frame      data/chars/1leo/ultra03.gif
+	frame      data/chars/1leo/ultra02.gif
+	frame      data/chars/1leo/ultra01.gif
+
+anim pain
+	loop       0
+	delay      27
+	offset     72 110
+	bbox       56 62 34 45
+        frame      data/chars/1leo/pain1.gif
+        frame      data/chars/1leo/pain1.gif
+        frame      data/chars/1leo/pain1.gif
+	delay      13
+        frame      data/chars/1leo/pain1.gif
+
+anim pain2
+	loop       0
+	delay      27
+	offset     72 110
+	bbox       56 62 34 45
+        frame      data/chars/1leo/pain1.gif
+	delay      45
+        frame      data/chars/1leo/pain3.gif
+
+anim pain3
+	loop       0
+	delay      27
+	offset     72 110
+	bbox       56 62 34 45
+        frame      data/chars/1leo/pain1.gif
+        frame      data/chars/1leo/pain2.gif
+        frame      data/chars/1leo/pain3.gif
+	delay      13
+        frame      data/chars/1leo/pain1.gif
+
+anim pain4
+	loop       0
+	delay      27
+	offset     72 110
+	bbox       56 62 34 45
+        frame      data/chars/1leo/pain3.gif
+	delay      45
+        frame      data/chars/1leo/pain1.gif
+
+anim pain5
+	loop       0
+	delay      27
+	offset     72 110
+	bbox       56 62 34 45
+        frame      data/chars/1leo/pain1.gif
+        frame      data/chars/1leo/pain2.gif
+        frame      data/chars/1leo/pain3.gif
+        frame      data/chars/1leo/pain2.gif
+        frame      data/chars/1leo/pain1.gif
+        frame      data/chars/1leo/pain2.gif
+        frame      data/chars/1leo/pain3.gif
+        frame      data/chars/1leo/pain2.gif
+        frame      data/chars/1leo/pain1.gif
+        frame      data/chars/1leo/pain2.gif
+        frame      data/chars/1leo/pain3.gif
+
+anim fall6
+	 loop       0
+	 delay      60
+	 offset     84 110
+	 bbox       56 62 36 38
+	 landframe  2
+         frame      data/chars/1leo/fall1.gif
+	 delay      999
+	 bbox       50 60 50 46
+         frame      data/chars/1leo/fall2.gif
+	 delay      12
+	 bbox       0 0 0 0
+         frame      data/chars/1leo/fall3.gif
+	 sound      data/sounds/fall1.wav
+         frame      data/chars/1leo/fall3.gif
+
+#######bossescn
+anim pain8
+	 loop       0
+	 delay      19
+	 offset     84 110
+	 bbox       72 62 27 45
+         frame      data/chars/1leo/pain1.gif
+anim pain9
+	 loop       0
+	 delay      19
+	 offset     84 110
+	 bbox       72 62 27 45
+         frame      data/chars/1leo/pain2.gif
+anim pain10
+	 loop       0
+	 delay      19
+	 offset     84 110
+	 bbox       72 62 27 45
+         frame      data/chars/1leo/pain3.gif
+
+anim fall8
+	 loop       0
+	 delay      60
+	 offset     84 110
+	 bbox       0
+	 landframe  2
+         frame      data/chars/1leo/fall1.gif
+	 delay      999
+         frame      data/chars/1leo/fall2.gif
+	 delay      12
+         frame      data/chars/1leo/fall3.gif
+	 sound      data/sounds/fall1.wav
+         frame      data/chars/1leo/fall3.gif
+anim fall9
+	 loop       0
+	 delay      60
+	 offset     84 110
+	 bbox       0
+	 landframe  2
+         frame      data/chars/1leo/fall1.gif
+	 delay      999
+         frame      data/chars/1leo/fall2.gif
+	 delay      12
+         frame      data/chars/1leo/fall3.gif
+	 sound      data/sounds/fall1.wav
+         frame      data/chars/1leo/fall3.gif
+anim fall10
+	 loop       0
+	 delay      60
+	 offset     84 110
+	 bbox       0
+	 landframe  2
+         frame      data/chars/1leo/fall1.gif
+	 delay      999
+         frame      data/chars/1leo/fall2.gif
+	 delay      12
+         frame      data/chars/1leo/fall3.gif
+	 sound      data/sounds/fall1.wav
+         frame      data/chars/1leo/fall3.gif
+
+#######force push
+anim fall7
+	 loop       0
+	 delay      999
+	 offset     84 110
+	 bbox       63 83 34 42
+	 landframe  2
+@cmd toss0001 200
+@cmd jump001 0 0 0
+         frame      data/chars/1leo/fall1.gif
+	 delay      999
+@cmd jump001 0 0 0
+         frame      data/chars/1leo/fall2.gif
+	 delay      12
+	 bbox       0 0 0 0
+         frame      data/chars/1leo/fall3.gif
+	 sound      data/sounds/fall1.wav
+         frame      data/chars/1leo/fall3.gif
+
+#SCRIPTED SLAMS
+anim fall80
+	 loop       0
+	 delay      5000
+	 bbox       0
+	 offset     69 110
+         frame      data/chars/1leo/pain1.gif #follow30
+         frame      data/chars/1leo/pain2.gif
+         frame      data/chars/1leo/pain3.gif #follow31
+         frame      data/chars/1leo/pain1.gif #follow 1 #follow27
+         frame      data/chars/1leo/pain2.gif #follow32
+         frame      data/chars/1leo/pain3.gif
+	 offset     84 110
+         frame      data/chars/0misc/empty.gif   #mcguire megaton press
+         frame      data/chars/2wllms/pain08.gif
+         frame      data/chars/2wllms/pain09.gif
+         frame      data/chars/1leo/fall1.gif #follow15
+#10
+	 offset     70 90
+         frame      data/chars/1leo/fall2.gif
+	 offset     84 110
+         frame      data/chars/2wllms/fall03.gif #follow12
+         frame      data/chars/2wllms/fall04.gif #follow17
+         frame      data/chars/2wllms/fall05.gif
+         frame      data/chars/2wllms/fall06.gif #follow 2
+         frame      data/chars/2wllms/fall07.gif
+         frame      data/chars/2wllms/fall08.gif #follow20 #follow25 #follow26
+         frame      data/chars/2wllms/fall09.gif #follow 7
+         frame      data/chars/2wllms/fall10.gif #follow 8
+         frame      data/chars/2wllms/fall11.gif #follow 3
+#20
+         frame      data/chars/1leo/fall1.gif
+         frame      data/chars/1leo/fall2.gif
+         frame      data/chars/1leo/fall3.gif
+         frame      data/chars/2wllms/fall16.gif
+         frame      data/chars/2wllms/fall17.gif #follow21
+         frame      data/chars/2wllms/fall18.gif
+         frame      data/chars/2wllms/fall19.gif
+         frame      data/chars/2wllms/fall20.gif
+         frame      data/chars/2wllms/fall21.gif
+         frame      data/chars/2wllms/fall22.gif #follow 9
+#30
+         frame      data/chars/2wllms/fall23.gif #follow28
+         frame      data/chars/2wllms/fall24.gif #follow18 follow19
+         frame      data/chars/2wllms/fall25.gif #follow14
+         frame      data/chars/2wllms/fall26.gif #follow22 #follow23 #follow24
+         frame      data/chars/2wllms/fall27.gif #follow40
+         frame      data/chars/2wllms/fall28.gif #follow38
+         frame      data/chars/2wllms/fall29.gif
+         frame      data/chars/2wllms/fall30.gif
+         frame      data/chars/2wllms/fall31.gif
+	 offset     80 129
+         frame      data/chars/1leo/backb01.gif
+	 offset     84 110
+#40
+         frame      data/chars/2wllms/painh2.gif #follow34
+         frame      data/chars/2wllms/painh3.gif #follow35
+         frame      data/chars/2wllms/painh4.gif #follow37
+         frame      data/chars/1leo/fallc1.gif
+         frame      data/chars/1leo/fallc2.gif
+         frame      data/chars/1leo/fallc3.gif
+
+
+
+

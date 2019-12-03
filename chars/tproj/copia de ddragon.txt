@@ -1,0 +1,83 @@
+name	  ddragon
+health    0
+speed     0
+remove    0
+nomove    1
+type      enemy
+hostile   enemy obstacle
+candamage enemy obstacle
+nolife    1
+alpha     1
+lifespan  3
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	380 23
+	seta    0
+	hitflash  flashh
+	attack  97 6 316 57 80 1 1 0 0 20
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag06.gif
+	delay   2
+	move    5
+	sound   data/sounds/dragon.wav
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag01.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag03.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	frame	data/chars/tproj/ddrag02.gif
+	attack  0
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag06.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag05.gif
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag04.gif
+	frame	data/chars/tproj/ddrag04.gif
+
+
+
+
+
+
+
+
+
+
+

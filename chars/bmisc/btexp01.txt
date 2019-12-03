@@ -1,0 +1,40 @@
+name	   btexp01
+type	   panel
+speed      10
+facing     1
+shadow	   0
+lifespan   2
+candamage  enemy obstacle
+setlayer   999
+
+anim idle
+	loop      0
+	delay     4
+	offset    161 244
+	bbox      0
+	quakeframe 2 3 7
+	sound     data/sounds2/exp3.wav
+	frame     data/chars/bmisc/exp01.gif
+	frame     data/chars/bmisc/exp02.gif
+	frame     data/chars/bmisc/exp03.gif
+	frame     data/chars/bmisc/exp04.gif
+	sound     data/sounds2/exp3.wav
+	attack    -600 0 1100 1000 70 1 1 0 3 90
+	dropv     2 3 0
+	frame     data/chars/bmisc/exp05.gif
+	frame     data/chars/bmisc/exp06.gif
+	frame     data/chars/bmisc/exp04.gif
+	frame     data/chars/bmisc/exp05.gif
+	frame     data/chars/bmisc/exp06.gif
+	frame     data/chars/bmisc/exp07.gif
+	attack    0
+	frame     data/chars/bmisc/exp08.gif
+	frame     data/chars/bmisc/exp09.gif
+	frame     data/chars/bmisc/empty.gif
+
+
+
+
+
+
+

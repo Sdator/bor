@@ -1,0 +1,54 @@
+name	   btbomb
+type	   panel
+speed      10
+facing     1
+shadow	   0
+#lifespan   5
+setlayer   999
+
+load       btexp01
+
+anim idle
+	loop      0
+	delay     4
+	offset    161 244
+	bbox      0
+	custentity btexp01
+	spawnframe 29 128 224 0 1
+	sound     data/sounds2/misil.wav
+	frame     data/chars/bmisc/bo01.gif
+	sound     data/sounds2/misil.wav
+	frame     data/chars/bmisc/bo02.gif
+	frame     data/chars/bmisc/bo03.gif
+	frame     data/chars/bmisc/bo04.gif
+	frame     data/chars/bmisc/bo05.gif
+	frame     data/chars/bmisc/bo06.gif
+	frame     data/chars/bmisc/bo07.gif
+	frame     data/chars/bmisc/bo08.gif
+	frame     data/chars/bmisc/bo09.gif
+	frame     data/chars/bmisc/bo10.gif
+	frame     data/chars/bmisc/bo11.gif
+	frame     data/chars/bmisc/bo12.gif
+	frame     data/chars/bmisc/bo13.gif
+	frame     data/chars/bmisc/bo14.gif
+	frame     data/chars/bmisc/bo15.gif
+	frame     data/chars/bmisc/bo16.gif
+	frame     data/chars/bmisc/bo17.gif
+	frame     data/chars/bmisc/bo18.gif
+	frame     data/chars/bmisc/bo19.gif
+	frame     data/chars/bmisc/bo20.gif
+	frame     data/chars/bmisc/bo21.gif
+	frame     data/chars/bmisc/bo22.gif
+	frame     data/chars/bmisc/bo23.gif
+	frame     data/chars/bmisc/bo24.gif
+	frame     data/chars/bmisc/bo25.gif
+	frame     data/chars/bmisc/bo26.gif
+	frame     data/chars/bmisc/bo27.gif
+	frame     data/chars/bmisc/bo28.gif
+	frame     data/chars/bmisc/bo29.gif
+	frame     data/chars/bmisc/empty.gif
+
+
+
+
+

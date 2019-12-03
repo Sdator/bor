@@ -1,0 +1,588 @@
+name          spectre3
+type          enemy
+candamage     player obstacle npc
+subject_to_obstacle 0
+health        100
+jugglepoints  20
+speed         6
+jumpheight    2.43
+grabdistance  35
+throw         2 3
+throwdamage   20
+shadow        0
+gfxshadow     1
+noquake       1
+nolife        1
+risetime      30
+paingrab      1
+antigravity   40
+blockodds     1
+thold         30
+aggression    100
+cantgrab      1
+atchain       1 0 0 0 0
+offscreen_noatk_factor 1
+#diesound      data/sounds/pain3.wav
+projectilehit enemy obstacle
+nodrop        2
+nodieblink    2
+falldie       1
+
+aimove chase
+
+ondrawscript	  data/scripts/shadowon.c
+animationscript   data/scripts/lib001.c
+
+palette        data/chars/2spectre/idle01.gif
+alternatepal   data/chars/2spectre/alt01.gif
+
+anim death
+	 loop       0
+	 delay      200
+	 offset     65 181
+	 bbox       0
+	 load       lightnn
+	 load       lightnn2
+	 load       lightnn3
+drawmethod scale 0.90
+         frame      data/chars/2spectre/pain01.gif
+	 delay      12
+         frame      data/chars/2spectre/death05.gif
+         frame      data/chars/2spectre/death03.gif
+         frame      data/chars/2spectre/death02.gif
+	 delay      200
+@cmd spawn001 "lightnn" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      150
+@cmd spawn001 "lightnn2" "lightnn2" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      200
+@cmd spawn001 "lightnn3" "lightnn3" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      150
+@cmd spawn001 "lightnn2" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+
+@script
+    void vSelf = getlocalvar("self");
+if(frame==1)
+{
+      fademusic(0.1, "data/music/00.ogg", 1, 0);
+}@end_script
+
+	 delay      100
+@cmd spawn001 "lightnn" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      80
+@cmd spawn001 "lightnn2" "lightnn2" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      100
+@cmd spawn001 "lightnn3" "lightnn3" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      70
+@cmd spawn001 "lightnn2" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+
+
+	 delay      60
+@cmd spawn001 "lightnn" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      50
+@cmd spawn001 "lightnn2" "lightnn2" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      70
+@cmd spawn001 "lightnn3" "lightnn3" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      50
+@cmd spawn001 "lightnn2" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+
+	 delay      30
+@cmd spawn001 "lightnn" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      20
+@cmd spawn001 "lightnn2" "lightnn2" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      10
+@cmd spawn001 "lightnn3" "lightnn3" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 delay      20
+@cmd spawn001 "lightnn2" "lightnn" 0 0 0 0 0
+         frame      data/chars/2spectre/death01.gif
+	 sound      data/sounds/spedea.wav
+	 delay      30
+         frame      data/chars/2spectre/death06.gif
+         frame      data/chars/2spectre/death07.gif
+         frame      data/chars/2spectre/death08.gif
+	 delay      100
+         frame      data/chars/2spectre/death09.gif
+	 delay      7
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+         frame      data/chars/2spectre/death09.gif
+         frame      data/chars/0misc/empty.gif
+
+anim spawn
+	 loop       0
+	 delay      5
+	 offset     65 181
+	 bbox       0
+drawmethod scale 0.90
+	 quakeframe 5 3 3
+	 load       lightnn
+	 custentity lightnn
+	 spawnframe 5 0 0 0 
+	 delay      9
+	 sound      data/sounds/spespa.wav
+drawmethod  alpha 6
+drawmethod channel 0.03
+         frame      data/chars/2spectre/thun01.gif
+drawmethod  alpha 6
+drawmethod channel 0.05
+         frame      data/chars/2spectre/thun02.gif
+drawmethod  alpha 6
+drawmethod channel 0.10
+         frame      data/chars/2spectre/thun03.gif
+drawmethod  alpha 6
+drawmethod channel 0.20
+         frame      data/chars/2spectre/thun04.gif
+drawmethod  alpha 6
+drawmethod channel 0.30
+         frame      data/chars/2spectre/thun05.gif
+	 delay      4
+drawmethod  alpha 6
+drawmethod channel 0.40
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.50
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.60
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.70
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.80
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.90
+         frame      data/chars/2spectre/thun06.gif
+	 delay      15
+drawmethod  alpha 0
+         frame      data/chars/2spectre/thun06.gif
+
+anim idle
+@cmd clearL
+	 loop       0
+	 delay      1
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+         frame      data/chars/2spectre/idle01.gif   
+
+anim block
+	 loop       0
+	 delay      2
+	 move       -3
+	 offset     65 181
+	 bbox       0 0 0 0
+drawmethod scale 0.90
+         frame      data/chars/2spectre/a201.gif
+         frame      data/chars/2spectre/a201.gif
+         frame      data/chars/2spectre/a201.gif
+         frame      data/chars/2spectre/a201.gif
+         frame      data/chars/2spectre/a201.gif
+         frame      data/chars/2spectre/a201.gif
+	 delay      15
+         frame      data/chars/2spectre/a201.gif
+
+anim walk
+	 loop       1
+	 delay      11
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+         frame      data/chars/2spectre/wk02.gif
+         frame      data/chars/2spectre/wk03.gif
+         frame      data/chars/2spectre/wk05.gif
+         frame      data/chars/2spectre/wk06.gif
+         frame      data/chars/2spectre/wk07.gif
+         frame      data/chars/2spectre/wk08.gif
+         frame      data/chars/2spectre/wk09.gif
+         frame      data/chars/2spectre/wk10.gif
+
+anim attack1
+@cmd attackoff
+	 range      50 80
+	 rangez     -3 3
+	 loop       0
+	 delay      15
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+	 hitflash   bflash
+	 hitfx      data/sounds/beatu.wav
+         frame      data/chars/2spectre/idle01.gif
+	 delay      7
+         frame      data/chars/2spectre/a201.gif
+	 delay      25
+	 offset     73 181
+	 bbox       43 93 40 88
+         frame      data/chars/2spectre/a202.gif
+	 delay      2
+	 offset     65 181
+	 bbox       43 93 40 88
+	 move       1
+	 sound      data/sounds/punch1.wav
+         frame      data/chars/2spectre/a203.gif
+         frame      data/chars/2spectre/a203.gif
+         frame      data/chars/2spectre/a203.gif
+	 attack     73 103 69 48 25 1 1 0 8 5
+	 dropv      2 2 0
+	 forcedirection  -1
+         frame      data/chars/2spectre/a204.gif
+         frame      data/chars/2spectre/a204.gif
+         frame      data/chars/2spectre/a204.gif
+	 move       3  
+	 attack     78 121 71 59 25 1 1 0 8 5
+	 dropv      2 2 0
+	 forcedirection  -1
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+	 move       2 
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+	 move       1
+         frame      data/chars/2spectre/a205.gif
+         frame      data/chars/2spectre/a205.gif
+	 move       0
+	 delay      15
+	 attack     0
+         frame      data/chars/2spectre/a205.gif
+	 delay      8
+         frame      data/chars/2spectre/a206.gif
+         frame      data/chars/2spectre/a207.gif
+
+anim freespecial1
+@cmd attackoff
+	 range      5 49
+	 rangez     -3 3
+	 loop       0
+	 delay      8
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+	 hitfx      data/sounds/beath.wav
+         frame      data/chars/2spectre/idle01.gif
+	 move       1
+	 delay      3
+	 sound      data/sounds/punch2.wav
+         frame      data/chars/2spectre/b101.gif
+         frame      data/chars/2spectre/b101.gif
+         frame      data/chars/2spectre/b101.gif
+         frame      data/chars/2spectre/b102.gif
+         frame      data/chars/2spectre/b102.gif
+         frame      data/chars/2spectre/b102.gif
+	 attack     78 121 71 59 25 1 0 0 8 5
+	 dropv      1.5 1.5 0
+	 forcedirection  -1
+         frame      data/chars/2spectre/b103.gif
+         frame      data/chars/2spectre/b103.gif
+         frame      data/chars/2spectre/b103.gif
+         frame      data/chars/2spectre/b103.gif
+	 attack     0 0 0 0
+         frame      data/chars/2spectre/b102.gif
+         frame      data/chars/2spectre/b102.gif
+         frame      data/chars/2spectre/b102.gif
+         frame      data/chars/2spectre/b101.gif
+         frame      data/chars/2spectre/b101.gif
+         frame      data/chars/2spectre/b101.gif
+         frame      data/chars/2spectre/idle01.gif
+
+anim freespecial2
+@cmd attackoff
+	 range      81 120
+	 rangez     -3 3
+	 loop       0
+	 delay      8
+	 offset     65 181
+	 bbox       0 0 0 0
+	 flipframe  14
+	 quakeframe 9 3 3
+	 custentity lightnn3
+	 spawnframe 7 0 0 0 
+drawmethod scale 0.90
+	 hitflash   bflash
+	 hitfx      data/sounds/beatu.wav
+         frame      data/chars/2spectre/idle01.gif
+         frame      data/chars/2spectre/thun01.gif
+         frame      data/chars/2spectre/thun02.gif
+         frame      data/chars/2spectre/thun03.gif
+         frame      data/chars/2spectre/thun04.gif
+         frame      data/chars/2spectre/thun05.gif
+         frame      data/chars/2spectre/thun06.gif
+	 delay      3
+drawmethod  alpha 6
+drawmethod channel 0.90
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.70
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.50
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.30
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.20
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.10
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.10
+         frame      data/chars/2spectre/thun06.gif
+	 move       180
+	 delay      7
+drawmethod  alpha 6
+drawmethod channel 0.20
+         frame      data/chars/2spectre/a100.gif
+	 move       0
+         frame      data/chars/2spectre/a101.gif
+drawmethod  alpha 6
+drawmethod channel 0.40
+	 sound      data/sounds/punch1.wav
+         frame      data/chars/2spectre/a102.gif
+drawmethod  alpha 6
+drawmethod channel 0.70
+	 attack     75 137 99 4 25 1 1 0 8 5
+	 dropv      1.5 2 0
+	 forcedirection  -1
+         frame      data/chars/2spectre/a301.gif
+	 attack     0
+	 delay      14
+drawmethod  alpha 6
+drawmethod channel 0.90
+         frame      data/chars/2spectre/a102.gif
+drawmethod  alpha 0
+         frame      data/chars/2spectre/a101.gif
+         frame      data/chars/2spectre/death05.gif
+
+anim upper
+	 range      5 120
+	 rangez     -3 3
+	 loop       0
+	 delay      7
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+	 hitflash   bflash
+	 sound      data/sounds/punch3.wav
+	 hitfx      data/sounds/beatu.wav
+         frame      data/chars/2spectre/a100.gif
+         frame      data/chars/2spectre/a101.gif
+         frame      data/chars/2spectre/a102.gif
+	 attack     78 95 83 57 20 1 0 0 8 5
+	 dropv      1.5 1.5 0
+	 forcedirection  -1
+         frame      data/chars/2spectre/a103.gif
+	 delay      30
+	 attack     64 73 50 70 20 1 0 0 8 5
+	 dropv      1.5 1.5 0
+	 forcedirection  -1
+         frame      data/chars/2spectre/a104.gif
+	 delay      10
+         frame      data/chars/2spectre/a105.gif
+         frame      data/chars/2spectre/a106.gif
+         frame      data/chars/2spectre/a107.gif
+         frame      data/chars/2spectre/a100.gif
+
+anim special
+anim jump
+
+anim pain
+	 loop       0
+	 delay      15
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+         frame      data/chars/2spectre/pain01.gif
+
+anim pain3
+	 loop       0
+	 delay      30
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+         frame      data/chars/2spectre/pain01.gif
+
+anim pain8
+	 loop       0
+	 delay      20
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+         frame      data/chars/2spectre/pain01.gif
+
+anim pain7
+	 loop       0
+	 delay      3
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+	 delay      25
+         frame      data/chars/2spectre/pain01.gif
+
+anim pain6
+	 loop       0
+	 delay      17
+	 offset     65 181
+	 bbox       43 93 40 88
+drawmethod scale 0.90
+	 move       -5
+	 delay      2
+	 sound      data/sounds/spepai.wav
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+         frame      data/chars/2spectre/pain01.gif
+	 delay      12
+         frame      data/chars/2spectre/pain01.gif
+
+anim pain9
+	 loop       0
+	 delay      5
+	 offset     65 181
+	 bbox       0
+drawmethod scale 0.90
+	 move       -1
+	 flipframe  17
+	 quakeframe 10 3 3
+	 load       lightnn2
+	 custentity lightnn2
+	 spawnframe 10 0 0 0 
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       -1
+         frame      data/chars/2spectre/pain01.gif
+	 move       1
+         frame      data/chars/2spectre/pain01.gif
+	 move       0
+	 delay      9
+         frame      data/chars/2spectre/thun01.gif
+         frame      data/chars/2spectre/thun02.gif
+         frame      data/chars/2spectre/thun03.gif
+         frame      data/chars/2spectre/thun04.gif
+         frame      data/chars/2spectre/thun05.gif
+         frame      data/chars/2spectre/thun06.gif
+	 delay      4
+drawmethod  alpha 6
+drawmethod channel 0.90
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.70
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.50
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.30
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.20
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.10
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.10
+         frame      data/chars/2spectre/thun06.gif
+	 move       150
+	 delay      3
+drawmethod  alpha 6
+drawmethod channel 0.20
+         frame      data/chars/2spectre/thun06.gif
+	 move       0
+drawmethod  alpha 6
+drawmethod channel 0.30
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.50
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.70
+         frame      data/chars/2spectre/thun06.gif
+drawmethod  alpha 6
+drawmethod channel 0.90
+         frame      data/chars/2spectre/thun06.gif
+	 delay      9
+drawmethod  alpha 0
+         frame      data/chars/2spectre/thun07.gif
+	 delay      7
+         frame      data/chars/2spectre/thun01.gif
+
+anim fall
+anim rise
+

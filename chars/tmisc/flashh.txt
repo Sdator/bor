@@ -1,0 +1,26 @@
+name	Flashh
+type	none
+shadow	0
+toflip  1
+alpha	3
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    74 72
+	 frame     data/chars/Tmisc/hflash01.gif
+	 frame     data/chars/Tmisc/hflash02.gif
+	 frame     data/chars/Tmisc/hflash03.gif
+	 frame     data/chars/Tmisc/hflash04.gif
+	 frame     data/chars/Tmisc/hflash05.gif
+	 frame     data/chars/Tmisc/hflash06.gif
+	 frame     data/chars/Tmisc/hflash07.gif
+	 frame     data/chars/Tmisc/hflash08.gif
+
+
+anim attack
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+

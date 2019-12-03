@@ -1,0 +1,1153 @@
+music           data/music/bossr01.ogg 1
+background	data/bgs/bossr/n00.gif
+panel		data/bgs/bossr/n00.gif
+cameratype	1
+direction       both
+light  		10  20
+at       	0
+settime         0
+notime          1
+noslow          1
+order	        a
+type            1
+spawn1          100 40
+spawn2          110 45
+updatescript     data/scripts/traileru.c
+
+
+wall   51 192 -500 -500 38 0 45 500
+wall   455 192 -38 0 500 500 45 500
+
+spawn   bossr
+spawnscript data/scripts/noscpos.c
+coords  254 228 
+at      0
+
+spawn   torch01
+coords  40 228
+at      0
+
+spawn   flare01
+coords  40 229
+at      0
+
+spawn   torch01
+coords  468 228
+at      0
+
+spawn   flare01
+coords  468 229
+at      0
+
+###################### 1
+
+group   3 3
+at      0
+
+spawn   steve
+spawnscript data/scripts/noscpos.c
+health  250
+coords  254 160 170
+at      0
+
+spawn   williams
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 2
+
+group   3 3
+at      0
+
+spawn   jackson
+spawnscript data/scripts/noscpos.c
+health  250
+coords  254 160 170
+at      0
+
+spawn   roper
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   linda1
+item    knife01
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 3
+
+group   4 4
+at      0
+
+spawn   chen1b
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   chen1b
+map     1
+spawnscript data/scripts/noscpos.c
+health  250
+coords  328 160 170
+at      0
+
+spawn   roper
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+weapon  knife01
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 4
+
+group   3 3
+at      0
+
+spawn   mcguire
+spawnscript data/scripts/noscpos.c
+health  300
+coords  254 160 170
+at      0
+
+spawn   williams
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 5
+
+group   3 3
+at      0
+
+spawn   carlem
+spawnscript data/scripts/noscpos.c
+health  350
+coords  254 160 170
+at      0
+
+spawn   linda1
+item    knife01
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+
+musicfade 1.5
+at      0
+music   data/music/bossr02.ogg
+at      0
+############################################## 6
+
+group   4 4
+at      0
+
+spawn   steve
+map     1
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   baker
+map     1
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+map     1
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 7
+
+group   4 4
+at      0
+
+spawn   jackson
+map     1
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   williams
+map     1
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   roper
+map     1
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 8
+
+group   4 4
+at      0
+
+spawn   chen1b
+map     1
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   chen1b
+map     2
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   linda1
+map     1
+item    knife01
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 9
+
+group   4 4
+at      0
+
+spawn   mcguire
+map     1
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   baker
+map     1
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   linda1
+map     1
+item    knife01
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 10
+
+group   4 4
+at      0
+
+spawn   carlem
+map     1
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   linda1
+item    knife01
+map     1
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+map     1
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     1
+weapon  bo
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+musicfade 1.5
+at      0
+music   data/music/bossr03.ogg
+at      0
+############################################## 11
+
+group   4 4
+at      0
+
+spawn   steve
+map     2
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   jeff
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+map     1
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 12
+
+group   4 4
+at      0
+
+spawn   jackson
+map     2
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   jeff
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   baker
+map     2
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     2
+weapon  nunchuck
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 13
+
+group   4 4
+at      0
+
+spawn   chen2
+map     2
+spawnscript data/scripts/noscpos.c
+health  400
+coords  -30 210
+at      0
+
+spawn   chen3
+health  400
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+spawn   baker
+map     2
+spawnscript data/scripts/noscpos.c
+coords  183 160 170
+at      0
+
+spawn   baker
+map     2
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+group   1 1
+at      0
+###################### 14
+
+group   4 4
+at      0
+
+spawn   mcguire
+map     2
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   jeff
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+weapon  knife01
+map     2
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     2
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 15
+
+group   4 4
+at      0
+
+spawn   carlem
+map     2
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   jeff
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   baker
+map     2
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   linda1
+item    knife01
+map     2
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+musicfade 1.5
+at      0
+music   data/music/bossr04.ogg
+at      0
+############################################## 16
+
+group   4 4
+at      0
+
+spawn   steve
+map     3
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   steve
+health  250
+map     3
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+map     3
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 17
+
+group   4 4
+at      0
+
+spawn   jackson
+map     3
+spawnscript data/scripts/noscpos.c
+health  300
+coords  183 160 170
+at      0
+
+spawn   jackson
+health  300
+map     3
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   roper
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     3
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+
+group   1 1
+at      0
+###################### 18
+
+group   4 4
+at      0
+
+spawn   chen1b
+map     3
+spawnscript data/scripts/noscpos.c
+health  300
+coords  183 160 170
+at      0
+
+spawn   chen1b
+health  300
+map     4
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   jeff
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   jeff
+map     3
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 19
+
+group   4 4
+at      0
+
+spawn   mcguire
+map     3
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   mcguire
+health  350
+map     4
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   linda1
+item    knife01
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   linda1
+item    knife01
+map     3
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 20
+
+group   4 4
+at      0
+
+spawn   carlem
+map     3
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   carlem
+health  350
+map     4
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   jeff
+map     2
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+map     3
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+musicfade 1.5
+at      0
+music   data/music/bossr05.ogg
+at      0
+############################################## 21
+
+group   4 4
+at      0
+
+spawn   steve
+map     4
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   babobo
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   roper
+map     4
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+map     4
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 22
+
+group   4 4
+at      0
+
+spawn   jackson
+map     4
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   babobo
+map     1
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   baker
+map     4
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     4
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+group   1 1
+at      0
+###################### 23
+
+group   4 4
+at      0
+
+spawn   chen2
+map     2
+spawnscript data/scripts/noscpos.c
+health  400
+coords  -30 210
+at      0
+
+spawn   chen3
+health  400
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+spawn   babobo
+map     1
+health  250
+spawnscript data/scripts/noscpos.c
+coords  183 160 170
+at      0
+
+spawn   babobo
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+group   1 1
+at      0
+###################### 24
+
+group   4 4
+at      0
+
+spawn   mcguire
+map     4
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   babobo
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   linda1
+item    knife01
+map     4
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+map     4
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 25
+
+group   4 4
+at      0
+
+spawn   carlem
+spawnscript data/scripts/noscpos.c
+health  350
+coords  183 160 170
+at      0
+
+spawn   babobo
+map     1
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   baker
+map     4
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     4
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+musicfade 1.5
+at      0
+music   data/music/bossr06.ogg
+at      0
+############################################## 26
+
+group   5 5
+at      0
+
+spawn   jeff
+spawnscript data/scripts/noscpos.c
+map     4
+health  250
+coords  254 190 170
+at      0
+
+spawn   steve
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   steve
+map     1
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+map     2
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 27
+
+group   5 5
+at      0
+
+spawn   jeff
+spawnscript data/scripts/noscpos.c
+map     4
+health  250
+coords  254 190 170
+at      0
+
+spawn   steve
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   jackson
+map     1
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   roper
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+map     2
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 28
+
+group   5 5
+at      0
+
+spawn   jeff
+spawnscript data/scripts/noscpos.c
+map     4
+health  250
+coords  254 190 170
+at      0
+
+spawn   chen1b
+map     3
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   chen1b
+map     4
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   linda1
+item    knife01
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+map     2
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 29
+
+group   5 5
+at      0
+
+spawn   jeff
+spawnscript data/scripts/noscpos.c
+map     2
+health  250
+coords  254 190 170
+at      0
+
+spawn   mcguire
+map     2
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   babobo
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   roper
+map     3
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   williams
+map     2
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 30
+
+group   5 5
+at      0
+
+spawn   carlem
+spawnscript data/scripts/noscpos.c
+map     2
+health  350
+coords  254 190 170
+at      0
+
+spawn   jeff
+map     2
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   jeff
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   williams
+map     4
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   roper
+map     4
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+###################### 31
+
+group   5 5
+at      0
+
+spawn   jeff
+spawnscript data/scripts/noscpos.c
+map     4
+health  350
+coords  254 190 170
+at      0
+
+spawn   babobo
+spawnscript data/scripts/noscpos.c
+health  250
+coords  183 160 170
+at      0
+
+spawn   babobo
+map     1
+health  250
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   linda1
+item    knife01
+map     4
+spawnscript data/scripts/noscpos.c
+coords  -30 210
+at      0
+
+spawn   baker
+map     1
+spawnscript data/scripts/noscpos.c
+coords  538 210
+at      0
+
+group   1 1
+at      0
+########################################### 32
+
+group   5 5
+at      0
+
+spawn   duke1d
+boss    1
+spawnscript data/scripts/noscpos.c
+health  900
+2phealth 1000
+coords  254 190 170
+at      0
+
+spawn   duke2
+boss    1
+spawnscript data/scripts/noscpos.c
+health  600
+coords  183 160 170
+at      0
+
+spawn   duke3
+boss    1
+health  600
+spawnscript data/scripts/noscpos.c
+coords  328 160 170
+at      0
+
+spawn   duke4
+boss    1
+health  600
+spawnscript data/scripts/noscpos.c
+coords  150 160 170
+at      0
+
+spawn   duke5
+boss    1
+health  600
+spawnscript data/scripts/noscpos.c
+coords  361 160 170
+at      0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

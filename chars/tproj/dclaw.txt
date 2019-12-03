@@ -1,0 +1,67 @@
+name	  dclaw
+health    0
+speed     0
+nomove    1
+remove    0
+type      none
+candamage enemy obstacle npc
+nolife    1
+alpha     1
+lifespan  2
+
+anim idle
+	loop	0
+	delay	4
+	offset	0 115
+	seta    0
+	move    1
+	hitflash  flashh
+	hitfx   data/sounds2/beat8.wav
+	attack8 27 77 26 33 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw01.gif
+	attack8 31 74 28 38 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw02.gif
+	attack8 33 66 34 48 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw03.gif
+	attack8 34 61 41 55 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw04.gif
+	attack8 36 50 55 69 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw05.gif
+	attack8 41 45 55 76 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw06.gif
+	attack8 40 44 61 76 10 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 2.5 0
+	forcedirection -1
+	frame	data/chars/tproj/gclaw07.gif
+	attack8 0
+	frame	data/chars/tproj/gclaw08.gif
+	frame	data/chars/tproj/gclaw09.gif
+	frame	data/chars/tproj/gclaw10.gif
+	frame	data/chars/tproj/empty.gif
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+name    lance
+health  1
+type	enemy
+speed	15
+remove  0
+score   0 -1
+noquake 1
+subject_to_wall 0
+subject_to_hole 0
+candamage  player obstacle npc
+
+anim idle
+	loop   0
+	delay  2
+	offset 24 -15
+	bbox   0
+	hitfx  data/sounds/beat5.wav
+	attack 4 9 84 5 20 1 1 0 10
+	frame  data/chars/emisc/lance1.gif
+
+

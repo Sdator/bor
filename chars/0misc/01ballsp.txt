@@ -1,0 +1,21 @@
+name	   01ballsp
+nolife     1
+type	   none
+shadow	   0
+lifespan   50
+
+load       01ball
+
+anim idle
+	loop      1
+	delay     1
+	offset    0
+	bbox      0
+	custentity 01ball
+	spawnframe 1 0 0 200 0
+	frame     data/chars/0misc/empty.gif
+	delay     299
+	frame     data/chars/0misc/empty.gif
+
+
+

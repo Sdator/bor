@@ -1,0 +1,31 @@
+name    star
+health  1
+type	enemy
+speed	15
+remove  1
+score   0 -1
+noquake 1
+subject_to_wall 1
+subject_to_hole 0
+candamage  player obstacle npc
+
+anim idle
+	loop   1
+	delay  3
+	offset -20 -27
+	bbox   0 0 14 14
+	hitfx  data/sounds/beat4.wav
+	attack 2 2 7 7 10 1 1 0 13
+	frame  data/chars/emisc/st01.gif
+	frame  data/chars/emisc/st02.gif
+
+anim fall
+	loop   1
+	delay  3
+	offset -20 -27
+	jumpframe 1
+	move   3
+	frame  data/chars/emisc/st01.gif
+	frame  data/chars/emisc/st02.gif
+
+

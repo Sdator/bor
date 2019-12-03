@@ -1,0 +1,31 @@
+name	   btstomp
+type	   none
+shadow	   0
+lifespan   1
+alpha      1
+
+anim idle
+	loop      1
+	delay     2
+	offset    134 40
+	bbox      0
+	frame     data/chars/bmisc/st01.gif
+	frame     data/chars/bmisc/st02.gif
+	frame     data/chars/bmisc/st03.gif
+	frame     data/chars/bmisc/st04.gif
+	frame     data/chars/bmisc/st05.gif
+	frame     data/chars/bmisc/st06.gif
+	frame     data/chars/bmisc/st07.gif
+	frame     data/chars/bmisc/st08.gif
+	frame     data/chars/bmisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,661 @@
+name		Rash
+type		player
+health		100
+mp              100
+jugglepoints    20
+candamage       enemy obstacle pshot npc
+subject_to_obstacle 0
+speed           8
+running         15 2 2 0 0
+jumpheight      3
+jumpmove        3 3
+gfxshadow       1
+atchain         1 4 1 2 3
+noquake         1
+makeinv         2
+falldie         2
+riseinv         1
+jumpspeed       8
+grabdistance    35
+antigravity     40
+icon		data/chars/brash/icon.gif 1
+diesound        data/sounds2/death.wav
+#parrow         
+#parrow2   
+#parrow3
+#parrow4
+
+animationscript data/scripts/lib001.c
+didhitscript    data/scripts/didhit.c
+ondrawscript	data/scripts/shadowon.c
+
+load    btheli
+palette   data/chars/Bpimple/idle.gif
+
+com     a3	freespecial1
+com     a2	freespecial2
+
+anim waiting
+	loop       0
+	delay      4
+	offset     46 189
+	bbox       0
+	fshadow    0
+        frame      data/chars/Brash/sel01.gif
+
+anim select
+	loop       0
+	delay      4
+	offset     46 189
+	bbox       0
+	fshadow    0
+        frame      data/chars/Brash/sel02.gif
+        frame      data/chars/Brash/sel01.gif
+        frame      data/chars/Brash/sel02.gif
+        frame      data/chars/Brash/sel01.gif
+        frame      data/chars/Brash/sel02.gif
+        frame      data/chars/Brash/sel01.gif
+        frame      data/chars/Brash/sel02.gif
+        frame      data/chars/Brash/sel01.gif
+        frame      data/chars/Brash/sel02.gif
+        frame      data/chars/Brash/sel01.gif
+	delay      3
+	sound      data/sounds2/get.wav
+	drawmethod 16 16 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 32 32 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 48 48  0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 64 64 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 80 80 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 96 96 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 112 112 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 128 128 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 144 144 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 160 160 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 176 176 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 192 192 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 208 208 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 224 224 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	drawmethod 240 240 0 0 0 0 -1 0 0 0
+        frame      data/chars/Brash/sel03.gif
+	nodrawmethod
+        frame      data/chars/Brash/sel03.gif
+	delay      5
+        frame      data/chars/Brash/sel04.gif
+        frame      data/chars/Brash/sel05.gif
+        frame      data/chars/Brash/sel04.gif
+        frame      data/chars/Brash/sel05.gif
+        frame      data/chars/Brash/sel04.gif
+        frame      data/chars/Brash/sel05.gif
+
+anim follow150 #credix scene
+	 loop       1
+	 delay      10
+	 offset     1 1
+	 bbox       0
+	 fshadow    0
+         frame      data/chars/0misc/empty.gif
+
+anim idle
+@cmd clearL
+	loop	1
+	delay	13
+	offset	88 195
+	bbox	87 145 15 50
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle2.gif
+	frame	data/chars/Brash/idle2.gif
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle2.gif
+	frame	data/chars/Brash/idle2.gif
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle2.gif
+	frame	data/chars/Brash/idle2.gif
+	frame	data/chars/Brash/idle.gif
+	frame	data/chars/Brash/idle4.gif
+	frame	data/chars/Brash/idle4.gif
+	frame	data/chars/Brash/idle5.gif
+	frame	data/chars/Brash/idle5.gif
+	frame	data/chars/Brash/idle4.gif
+	frame	data/chars/Brash/idle4.gif
+	frame	data/chars/Brash/idle5.gif
+	frame	data/chars/Brash/idle5.gif
+	frame	data/chars/Brash/idle4.gif
+	frame	data/chars/Brash/idle4.gif
+	frame	data/chars/Brash/idle.gif
+	delay	9
+	frame	data/chars/Brash/idle7.gif
+	frame	data/chars/Brash/idle8.gif
+	frame	data/chars/Brash/idle9.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle7.gif
+	frame	data/chars/Brash/idle8.gif
+	frame	data/chars/Brash/idle9.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle91.gif
+
+anim walk
+	loop	1
+	delay	9
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/Brash/w1.gif
+	frame	data/chars/Brash/w2.gif
+	frame	data/chars/Brash/w3.gif
+	frame	data/chars/Brash/w4.gif
+	frame	data/chars/Brash/w5.gif
+	frame	data/chars/Brash/w6.gif
+	frame	data/chars/Brash/w7.gif
+
+anim run
+@script
+void self = getlocalvar("self"); //get the self var
+void power = getentityproperty(self,"mp"); // get target's current mp
+changeentityproperty(self, "mp", power+1); 
+@end_script
+	loop	1
+	delay	6
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/Brash/r1.gif
+	frame	data/chars/Brash/r2.gif
+	frame	data/chars/Brash/r3.gif
+	frame	data/chars/Brash/r4.gif
+	frame	data/chars/Brash/r5.gif
+
+anim attack1
+	loop	0
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+@cmd ani0020 openborconstant("ANI_ATTACK3") openborconstant("ANI_PAIN7")
+	frame	data/chars/Brash/a1.gif
+	frame	data/chars/Brash/a2.gif
+	frame	data/chars/Brash/a3.gif
+        hitfx   data/sounds2/beat8.wav
+	attack3 95 140 35 25 3 0 0 0 8 5
+	dropv      1.5 1 0
+	forcedirection -1
+	delay	4
+	frame	data/chars/Brash/a4.gif
+	attack3 0
+	frame	data/chars/Brash/a4.gif
+	delay	5
+	frame	data/chars/Brash/a1.gif
+
+anim attack4
+	loop	0
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+@cmd ani0020 openborconstant("ANI_ATTACK3") openborconstant("ANI_PAIN7")
+	frame	data/chars/Brash/a1.gif
+	frame	data/chars/Brash/a2.gif
+	frame	data/chars/Brash/a3.gif
+        hitfx   data/sounds2/beata.wav
+	attack4 95 140 35 25 3 0 0 0 8 5
+	dropv      1.5 1 0
+	forcedirection -1
+	delay	4
+	frame	data/chars/Brash/a4.gif
+	attack4 0
+	frame	data/chars/Brash/a4.gif
+	delay	5
+	frame	data/chars/Brash/a1.gif
+
+anim attack2
+	loop	0
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+	move    1
+@cmd ani0020 openborconstant("ANI_ATTACK3") openborconstant("ANI_PAIN7")
+        hitfx   data/sounds2/beat2.wav
+	frame	data/chars/Brash/a1.gif
+	frame	data/chars/Brash/a8.gif
+	frame	data/chars/Brash/a9.gif
+	attack7 95 140 55 50 10 0 0 0 8 5
+	dropv      1.5 1 0
+	forcedirection -1
+	frame	data/chars/Brash/a91.gif
+	attack7 0
+	frame	data/chars/Brash/a92.gif
+        move    0
+	delay	6
+	frame	data/chars/Brash/a93.gif
+	frame	data/chars/Brash/a92.gif
+
+anim attack3
+	loop	0
+	delay	18
+	offset	93 195
+        jumpframe 1 1 1 0
+	landframe 2
+	frame	data/chars/Brash/ba93.gif
+	delay	100
+        hitfx   data/sounds2/beat7.wav
+	attack  100 138 61 27 15 1 1 0 0 8 3
+	jugglecost 7
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Brash/ba94.gif
+	attack  0
+	delay	25
+	frame	data/chars/Brash/ba94.gif
+	delay	6
+	frame	data/chars/Brash/ba93.gif
+
+anim runattack
+	loop	0
+	delay   5
+	offset	88 195
+	bbox	82 145 10 50
+        jumpframe  3 1.7 1.7 0
+	landframe  4
+        hitfx   data/sounds2/beat2.wav
+	frame	data/chars/Brash/ra1.gif
+	frame	data/chars/Brash/ra2.gif
+	sound   data/sounds2/punch.wav
+	frame	data/chars/Brash/at2.gif
+	attack 	96 136 34 30 8 1 0 0 8 5
+	jugglecost 7
+	dropv      1.5 1 0
+	forcedirection -1
+	delay   200
+	frame	data/chars/Brash/ga3.gif
+	delay   5
+	attack  0
+	frame	data/chars/Brash/ga3.gif
+	frame	data/chars/Brash/ra2.gif
+	frame	data/chars/Brash/ra1.gif
+
+anim runjumpattack
+	loop	0
+	delay	5
+	offset	88 195
+	bbox	87 145 15 50
+        hitfx   data/sounds2/beat8.wav
+	sound   data/sounds2/punch2.wav
+	frame	data/chars/Brash/ja1.gif
+	attack  82 155 51 25 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Brash/ja2.gif
+	attack  81 162 28 34 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Brash/ja3.gif
+	attack  0
+	delay   8
+	frame	data/chars/Brash/j1.gif
+
+anim special
+	loop	0
+	delay	6
+	offset	88 195
+	bbox	0 0 0 0
+	energycost 10
+	mponly     2
+        jumpframe 1 1.5 0 0
+	landframe 3
+	frame	data/chars/Brash/sp1.gif
+	frame	data/chars/Brash/sp2.gif
+	sound   data/chars/Brash/sp.wav
+        hitfx   data/sounds2/beat7.wav
+	delay	200
+        attack  58 130 71 44 17 1 1 0 8 5
+	jugglecost 7
+	dropv   1.5 2.5 0
+	frame	data/chars/Brash/sp3.gif
+        delay   7
+	attack  0
+	frame	data/chars/Brash/sp2.gif
+	frame	data/chars/Brash/sp1.gif
+
+anim freespecial1
+	loop	0
+	delay	9
+	offset	88 195
+	bbox	0
+	energycost 100
+	mponly     1
+	custentity btheli
+	spawnframe 13 128 0 0 1
+	sound   data/sounds2/super.wav
+	frame	data/chars/Brash/a5.gif
+	frame	data/chars/Brash/heli01.gif
+	delay   7
+	frame	data/chars/Brash/heli02.gif
+	frame	data/chars/Brash/heli03.gif
+	frame	data/chars/Brash/heli04.gif
+	frame	data/chars/Brash/heli02.gif
+	frame	data/chars/Brash/heli03.gif
+	frame	data/chars/Brash/heli04.gif
+	frame	data/chars/Brash/heli02.gif
+	frame	data/chars/Brash/heli03.gif
+	frame	data/chars/Brash/heli04.gif
+	frame	data/chars/Brash/heli02.gif
+	frame	data/chars/Brash/heli03.gif
+	frame	data/chars/Brash/heli04.gif
+	delay	9
+	frame	data/chars/Brash/idle7.gif
+	frame	data/chars/Brash/idle8.gif
+	frame	data/chars/Brash/idle9.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle7.gif
+	frame	data/chars/Brash/idle8.gif
+	frame	data/chars/Brash/idle9.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle7.gif
+	frame	data/chars/Brash/idle8.gif
+	frame	data/chars/Brash/idle9.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle7.gif
+	frame	data/chars/Brash/idle8.gif
+	frame	data/chars/Brash/idle9.gif
+	frame	data/chars/Brash/idle91.gif
+	frame	data/chars/Brash/idle91.gif
+
+anim freespecial2
+#BIG BOOT
+	loop	0
+	delay   5
+	offset	88 195
+	bbox	82 145 10 50
+        jumpframe  3 1.5 1.5 0
+	landframe  4
+	energycost 40
+	mponly     1
+        hitfx   data/sounds2/beat2.wav
+	frame	data/chars/Brash/ra1.gif
+	frame	data/chars/Brash/ra2.gif
+	sound   data/sounds2/punch.wav
+	frame	data/chars/Brash/ra3.gif
+	attack 	95 140 45 45 18 1 1 0 8 3
+	jugglecost 7
+	dropv      1.5 2.5 0
+	delay   200
+	frame	data/chars/Brash/ra4.gif
+	delay   5
+	frame	data/chars/Brash/ga3.gif
+        attack  0
+	frame	data/chars/Brash/ra2.gif
+	frame	data/chars/Brash/ra1.gif
+
+anim special3
+#JUMPING AXE KICK
+	loop	0
+	delay	6
+	offset	88 195
+	bbox	87 145 15 50
+	landframe 5
+	jumpframe 1 0.5 1 0
+	energycost 40
+	mponly     1
+        hitfx   data/sounds2/beat5.wav
+	sound   data/sounds2/punch.wav
+	frame	data/chars/Brash/jr1.gif
+	attack  90 161 62 38 25 1 1 0 8 5
+	jugglecost 7
+	dropv   1.5 2.5 0
+	frame	data/chars/Brash/jr2.gif
+	attack  66 169 50 26 25 1 1 0 8 5
+	jugglecost 7
+	dropv   1.5 2.5 0
+	frame	data/chars/Brash/jr3.gif
+	attack  0
+	frame	data/chars/Brash/jr4.gif
+	delay   100
+	frame	data/chars/Brash/j1.gif
+	delay   8
+	frame	data/chars/Brash/rise1.gif
+
+anim jump
+	loop	0
+	delay	23
+	offset	88 195
+	bbox	82 125 20 50
+	frame	data/chars/Brash/j1.gif
+	delay	6
+	frame	data/chars/Brash/j2.gif
+	frame	data/chars/Brash/j3.gif
+	frame	data/chars/Brash/j4.gif
+	frame	data/chars/Brash/j5.gif
+	frame	data/chars/Brash/j6.gif
+	frame	data/chars/Brash/j7.gif
+	frame	data/chars/Brash/j8.gif
+	frame	data/chars/Brash/j9.gif
+	frame	data/chars/Brash/j1.gif
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	88 195
+	bbox	87 145 15 50
+	jumpframe 0 -3 2 0
+	landframe 5
+	frame	data/chars/Brash/a1.gif
+        hitfx   data/sounds2/beat8.wav
+	sound   data/sounds2/punch2.wav
+	frame	data/chars/Brash/ja1.gif
+	attack  82 155 51 25 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Brash/ja2.gif
+	attack  81 162 28 34 10 1 0 0 8 5
+	jugglecost 10
+	dropv      1.5 2 0
+	forcedirection -1
+	frame	data/chars/Brash/ja3.gif
+	attack  0
+	delay   100
+	frame	data/chars/Brash/j1.gif
+	delay   19
+	frame	data/chars/Brash/rise1.gif
+
+anim pain
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+	frame	data/chars/Brash/gr.gif
+	frame	data/chars/Brash/gr.gif
+	frame	data/chars/Brash/gr.gif
+	delay   13
+	frame	data/chars/Brash/gr.gif
+
+anim pain2
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+        frame   data/chars/Brash/gr.gif
+	delay   45
+        frame   data/chars/Brash/pain.gif
+
+anim pain3
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+        frame   data/chars/Brash/gr.gif
+        frame   data/chars/Brash/gr.gif
+        frame   data/chars/Brash/pain.gif
+	delay   13
+        frame   data/chars/Brash/gr.gif
+
+anim pain4
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+        frame   data/chars/Brash/gr.gif
+	delay   45
+        frame   data/chars/Brash/pain.gif
+
+anim pain5
+	loop	0
+	delay   27
+	offset	88 195
+	bbox	63 99 41 79
+	move    1
+        frame   data/chars/Brash/gr.gif
+	move    -1
+        frame   data/chars/Brash/gr.gif
+	move    1
+        frame   data/chars/Brash/gr.gif
+	move    -1
+        frame   data/chars/Brash/gr.gif
+	move    1
+        frame   data/chars/Brash/gr.gif
+	move    -1
+        frame   data/chars/Brash/gr.gif
+	move    1
+        frame   data/chars/Brash/gr.gif
+	move    -1
+        frame   data/chars/Brash/gr.gif
+	move    1
+        frame   data/chars/Brash/gr.gif
+	move    -1
+        frame   data/chars/Brash/gr.gif
+	move    1
+        frame   data/chars/Brash/gr.gif
+
+anim fall 
+	loop	0
+	delay   60
+	offset	88 195
+	delay   60
+	bbox    0
+	landframe  2
+        frame      data/chars/Brash/fall1.gif
+	delay      999
+        frame      data/chars/Brash/fall1.gif
+	sound      data/sounds2/fall2.wav
+	delay      10
+        frame      data/chars/Brash/fall4.gif
+
+anim fall6
+	loop	0
+	offset	88 195
+	delay   60
+	 bbox       66 128 42 45
+	 landframe  2
+         frame      data/chars/Brash/fall1.gif
+	 delay      999
+         frame      data/chars/Brash/fall1.gif
+	 delay      12
+	 bbox       0 0 0 0
+         frame      data/chars/Brash/fall4.gif
+	 sound      data/sounds2/fall1.wav
+         frame      data/chars/Brash/fall4.gif
+
+anim rise
+	loop	0
+	offset	88 195
+	delay	10
+	frame	data/chars/Brash/rise1.gif
+	frame	data/chars/Brash/rise2.gif
+
+anim death
+	loop	0
+	offset	88 195
+	delay   50
+	frame	data/chars/Brash/fall4.gif
+
+
+#SCRIPTED SLAMS
+anim fall80
+	 loop       0
+	 delay      5000
+	 bbox       0
+	 offset	    88 195
+         frame      data/chars/Brash/pain.gif #follow30
+         frame      data/chars/Brash/gr.gif
+         frame      data/chars/Brash/pain.gif #follow31
+         frame      data/chars/Brash/pain.gif #follow 1 #follow27
+         frame      data/chars/Brash/gr.gif #follow32
+         frame      data/chars/Brash/pain.gif
+	 offset     84 110
+         frame      data/chars/0misc/empty.gif   #mcguire megaton press
+         frame      data/chars/2wllms/pain08.gif
+         frame      data/chars/2wllms/pain09.gif
+	 offset	    88 195
+         frame      data/chars/Brash/fall1.gif #follow15
+#10
+	 offset	    88 195
+         frame      data/chars/Brash/fall1.gif
+	 offset     84 110
+         frame      data/chars/2wllms/fall03.gif #follow12
+         frame      data/chars/2wllms/fall04.gif #follow17
+         frame      data/chars/2wllms/fall05.gif
+         frame      data/chars/2wllms/fall06.gif #follow 2
+         frame      data/chars/2wllms/fall07.gif
+         frame      data/chars/2wllms/fall08.gif #follow20 #follow25 #follow26
+         frame      data/chars/2wllms/fall09.gif #follow 7
+         frame      data/chars/2wllms/fall10.gif #follow 8
+         frame      data/chars/2wllms/fall11.gif #follow 3
+#20
+	 offset	    88 195
+         frame      data/chars/Brash/fall1.gif
+         frame      data/chars/Brash/fall1.gif
+         frame      data/chars/Brash/fall4.gif
+         frame      data/chars/2wllms/fall16.gif
+         frame      data/chars/2wllms/fall17.gif #follow21
+         frame      data/chars/2wllms/fall18.gif
+         frame      data/chars/2wllms/fall19.gif
+         frame      data/chars/2wllms/fall20.gif
+         frame      data/chars/2wllms/fall21.gif
+         frame      data/chars/2wllms/fall22.gif #follow 9
+#30
+         frame      data/chars/2wllms/fall23.gif #follow28
+         frame      data/chars/2wllms/fall24.gif #follow18 follow19
+         frame      data/chars/2wllms/fall25.gif #follow14
+         frame      data/chars/2wllms/fall26.gif #follow22 #follow23 #follow24
+         frame      data/chars/2wllms/fall27.gif #follow40
+         frame      data/chars/2wllms/fall28.gif #follow38
+         frame      data/chars/2wllms/fall29.gif
+         frame      data/chars/2wllms/fall30.gif
+         frame      data/chars/2wllms/fall31.gif
+	 offset     80 129
+         frame      data/chars/Brash/backb01.gif
+	 offset     84 110
+#40
+         frame      data/chars/2wllms/painh2.gif #follow34
+         frame      data/chars/2wllms/painh3.gif #follow35
+         frame      data/chars/2wllms/painh4.gif #follow37
+         frame      data/chars/Brash/fallc1.gif
+         frame      data/chars/Brash/fallc2.gif
+         frame      data/chars/Brash/fallc3.gif
+
+
+
+
+
+
+
+
+

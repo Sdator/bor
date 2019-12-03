@@ -1,0 +1,25 @@
+name	  lfury
+health    0
+speed     0
+nomove    1
+remove    0
+type      enemy
+hostile   enemy obstacle
+candamage enemy obstacle
+nolife    1
+alpha     1
+lifespan  2
+
+load      lfist01
+
+anim idle
+	loop	1
+	delay	7
+	offset	0 0
+	seta    0
+	custknife lfist01
+	throwframe 1 2
+	frame	data/chars/tproj/empty.gif
+	delay	17
+	frame	data/chars/tproj/empty.gif
+

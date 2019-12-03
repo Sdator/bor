@@ -1,0 +1,110 @@
+name	  lfist03
+health    0
+speed     15
+remove    1
+type      none
+candamage enemy obstacle npc
+nolife    1
+alpha     1
+
+palette   data/chars/tproj/lfist1.gif
+
+anim idle
+	loop	1
+	delay	4
+	offset	28 10
+	attack2 8 9 28 22 3 0 1 0 8 3
+	hitfx   data/sounds2/beat9.wav
+	fastattack 1
+	frame	data/chars/tproj/lfist1.gif
+	movea   -1
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	frame	data/chars/tproj/lfist1.gif
+	frame	data/chars/tproj/lfist2.gif
+	frame	data/chars/tproj/lfist3.gif
+	attack2 0
+	frame	data/chars/tproj/lfist3.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+

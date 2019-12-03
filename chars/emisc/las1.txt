@@ -1,0 +1,23 @@
+name	las1
+health	1
+type	enemy
+speed   15
+shadow	0
+remove  1
+alpha   1
+subject_to_wall 1
+subject_to_hole 0
+candamage  player obstacle npc
+
+anim idle
+	 loop    1
+	 delay   4
+	 offset  -15 -35
+	 bbox    0 0 0 0	
+	 attack  1 1 24 5 10 0 0 0 13
+	 frame   data/chars/emisc/las1.gif
+	 frame   data/chars/emisc/las2.gif
+
+
+
+

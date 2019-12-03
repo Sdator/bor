@@ -1,0 +1,23 @@
+name	staint2
+type	text
+subtype  noskip
+setlayer 9999999999
+nodieblink 3
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    0 228
+	 frame     data/chars/misc/staint/m2001.gif
+	 frame     data/chars/misc/staint/m2002.gif
+	 frame     data/chars/misc/staint/m2003.gif
+	 frame     data/chars/misc/staint/m2004.gif
+	 frame     data/chars/misc/staint/m2005.gif
+	 frame     data/chars/misc/staint/m2006.gif
+	 frame     data/chars/misc/staint/m2007.gif
+	 frame     data/chars/misc/staint/m2008.gif
+	 frame     data/chars/misc/staint/m2009.gif
+         delay     200
+	 frame     data/chars/misc/staint/m2010.gif
+
+

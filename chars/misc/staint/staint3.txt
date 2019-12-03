@@ -1,0 +1,23 @@
+name	staint3
+type	text
+subtype  noskip
+setlayer 9999999999
+nodieblink 3
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    0 228
+	 frame     data/chars/misc/staint/m3001.gif
+	 frame     data/chars/misc/staint/m3002.gif
+	 frame     data/chars/misc/staint/m3003.gif
+	 frame     data/chars/misc/staint/m3004.gif
+	 frame     data/chars/misc/staint/m3005.gif
+	 frame     data/chars/misc/staint/m3006.gif
+	 frame     data/chars/misc/staint/m3007.gif
+	 frame     data/chars/misc/staint/m3008.gif
+	 frame     data/chars/misc/staint/m3009.gif
+         delay     200
+	 frame     data/chars/misc/staint/m3010.gif
+
+

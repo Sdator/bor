@@ -1,0 +1,43 @@
+name	rainb
+type	panel
+speed   10
+#subject_to_screen 1
+alpha   1
+
+anim idle
+	 loop      1 12 16
+	 delay     7
+	 offset    0 228
+	 drawmethod alpha 6
+	 drawmethod channel 0.10
+	 frame     data/bgs/05chin/det/rain01a.gif
+	 drawmethod channel 0.20
+	 frame     data/bgs/05chin/det/rain02a.gif
+	 drawmethod channel 0.30
+	 frame     data/bgs/05chin/det/rain03a.gif
+	 drawmethod channel 0.40
+	 frame     data/bgs/05chin/det/rain04a.gif
+	 drawmethod channel 0.50
+	 frame     data/bgs/05chin/det/rain01a.gif
+	 drawmethod channel 0.60
+	 frame     data/bgs/05chin/det/rain02a.gif
+	 drawmethod channel 0.70
+	 frame     data/bgs/05chin/det/rain03a.gif
+	 drawmethod channel 0.80
+	 frame     data/bgs/05chin/det/rain04a.gif
+	 drawmethod channel 0.90
+	 frame     data/bgs/05chin/det/rain01a.gif
+	 drawmethod alpha 0
+	 delay     5
+	 frame     data/bgs/05chin/det/rain02a.gif
+	 frame     data/bgs/05chin/det/rain03a.gif
+	 frame     data/bgs/05chin/det/rain04a.gif
+
+	 frame     data/bgs/05chin/det/rain01a.gif
+	 frame     data/bgs/05chin/det/rain02a.gif
+	 frame     data/bgs/05chin/det/rain03a.gif
+	 frame     data/bgs/05chin/det/rain04a.gif
+
+
+
+

@@ -1,0 +1,99 @@
+name	  mbreath
+health    0
+speed     0
+nomove    1
+remove    0
+type      enemy
+hostile   enemy obstacle npc
+candamage enemy obstacle npc
+nolife    1
+alpha     1
+
+anim idle
+	loop	0
+	delay	4
+	offset	-17 73
+	seta    0
+	hitflash flashh
+	hitfx   data/sounds/beat9.wav
+	attack  6 76 141 49 60 1 1 0 8 3
+	forcedirection -1
+	jugglecost 10
+	dropv   2 2 0
+	frame	data/chars/tproj/mkfire01.gif
+	attack  5 76 176 52 60 1 1 0 8 3
+	forcedirection -1
+	jugglecost 10
+	dropv   2 2 0
+	frame	data/chars/tproj/mkfire02.gif
+	attack  5 76 215 56 60 1 1 0 8 3
+	forcedirection -1
+	jugglecost 10
+	dropv   2 2 0
+	frame	data/chars/tproj/mkfire03.gif
+	attack  5 70 235 68 60 1 1 0 8 3
+	forcedirection -1
+	jugglecost 10
+	dropv   2 2 0
+	frame	data/chars/tproj/mkfire04.gif
+	attack  5 70 245 69 60 1 1 0 8 3
+	forcedirection -1
+	jugglecost 10
+	dropv   2 2 0
+	frame	data/chars/tproj/mkfire05.gif
+	attack  5 70 238 69 60 1 1 0 8 3
+	forcedirection -1
+	jugglecost 10
+	dropv   2 2 0
+	frame	data/chars/tproj/mkfire06.gif
+	frame	data/chars/tproj/mkfire07.gif
+	frame	data/chars/tproj/mkfire08.gif
+	frame	data/chars/tproj/mkfire09.gif
+	frame	data/chars/tproj/mkfire10.gif
+	frame	data/chars/tproj/mkfire11.gif
+	frame	data/chars/tproj/mkfire12.gif
+	frame	data/chars/tproj/mkfire13.gif
+	frame	data/chars/tproj/mkfire07.gif
+	frame	data/chars/tproj/mkfire08.gif
+	frame	data/chars/tproj/mkfire09.gif
+	frame	data/chars/tproj/mkfire10.gif
+	frame	data/chars/tproj/mkfire11.gif
+	frame	data/chars/tproj/mkfire12.gif
+	frame	data/chars/tproj/mkfire13.gif
+	frame	data/chars/tproj/mkfire07.gif
+	frame	data/chars/tproj/mkfire08.gif
+	frame	data/chars/tproj/mkfire09.gif
+	frame	data/chars/tproj/mkfire10.gif
+	frame	data/chars/tproj/mkfire11.gif
+	frame	data/chars/tproj/mkfire12.gif
+	frame	data/chars/tproj/mkfire13.gif
+	frame	data/chars/tproj/mkfire07.gif
+	frame	data/chars/tproj/mkfire08.gif
+	frame	data/chars/tproj/mkfire09.gif
+	frame	data/chars/tproj/mkfire10.gif
+	frame	data/chars/tproj/mkfire11.gif
+	frame	data/chars/tproj/mkfire12.gif
+	frame	data/chars/tproj/mkfire13.gif
+	frame	data/chars/tproj/mkfire07.gif
+	frame	data/chars/tproj/mkfire08.gif
+	frame	data/chars/tproj/mkfire09.gif
+	frame	data/chars/tproj/mkfire10.gif
+	frame	data/chars/tproj/mkfire11.gif
+	frame	data/chars/tproj/mkfire12.gif
+	frame	data/chars/tproj/mkfire13.gif
+	frame	data/chars/tproj/mkfire07.gif
+	frame	data/chars/tproj/mkfire08.gif
+	frame	data/chars/tproj/mkfire09.gif
+	frame	data/chars/tproj/mkfire10.gif
+	frame	data/chars/tproj/mkfire11.gif
+	frame	data/chars/tproj/mkfire12.gif
+	frame	data/chars/tproj/mkfire13.gif
+	frame	data/chars/tproj/mkfire14.gif
+	frame	data/chars/tproj/mkfire15.gif
+	attack  0
+	frame	data/chars/tproj/mkfire16.gif
+	frame	data/chars/tproj/mkfire17.gif
+	frame	data/chars/tproj/mkfire18.gif
+	frame	data/chars/tproj/mkfire19.gif
+	frame	data/chars/tproj/empty.gif
+

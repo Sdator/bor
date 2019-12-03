@@ -1,0 +1,34 @@
+name	   Flashs2
+type	   none
+shadow	   0
+toflip     1
+alpha      1
+
+anim idle
+	 loop      0
+	 delay     3
+	 offset    179 180
+	 frame     data/chars/Tmisc/xsl01.gif
+	 frame     data/chars/Tmisc/xsl02.gif
+	 frame     data/chars/Tmisc/xsl03.gif
+	 frame     data/chars/Tmisc/xsl04.gif
+	 frame     data/chars/Tmisc/xsl05.gif
+	 frame     data/chars/Tmisc/xsl06.gif
+	 frame     data/chars/Tmisc/xsl07.gif
+
+anim attack
+	 loop      0
+	 delay     1
+	 offset    0 0
+	 frame     data/chars/Tmisc/empty.gif
+
+
+
+
+
+
+
+
+
+
+
